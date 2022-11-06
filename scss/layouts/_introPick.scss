@@ -1,0 +1,114 @@
+.intro-pick {
+  padding-top: 60px;
+  .width-default {
+    .title-page {
+      .title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffb300;
+      }
+      .des {
+        font-size: 30px;
+        color: #000;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 40px;
+      .content-left {
+        > a {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          display: inline-block;
+          padding: 5px 20px;
+          border-radius: 15px;
+          border: 1px solid #223591;
+          color: #223591;
+          font-size: 16px;
+        }
+        .description {
+          display: block;
+          color: #223591;
+          font-size: 20px;
+          margin-bottom: 20px;
+
+          strong {
+            // display: block;
+          }
+        }
+      }
+    }
+    .description-text {
+      .text-des {
+        color: #9a9b9e;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        a {
+          color: #333333;
+          text-decoration: underline;
+        }
+      }
+    }
+    .button-page {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      a {
+        background-color: #223591;
+        border: unset;
+        border-radius: 3px;
+        padding: 5px 25px;
+        color: #fff;
+        font-size: 16px;
+        &:focus {
+          border: unset;
+          outline: unset;
+        }
+      }
+    }
+
+    .table-intro {
+      justify-content: center;
+      margin-top: 70px;
+      margin-bottom: 100px;
+      .table-content {
+        width: 100%;
+        border: 1px solid #223591;
+        .item {
+          border-bottom: 1px solid #223591;
+          display: flex;
+          text-align: center;
+          &:last-child {
+            border-bottom: unset;
+          }
+          a {
+            display: block;
+            padding: 15px 0px;
+            color: #223591;
+            flex: 1;
+            &:first-child {
+              border-right: 1px solid #223591;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.page-intro-pick {
+  display: block !important;
+  &.section-info {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}

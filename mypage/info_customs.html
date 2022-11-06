@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="../scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../scss/owl.theme.default.min.css" />
+
+    <title>싼ㅡ택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="../images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배 </span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>배송조회</button>
+                <button>로 그인</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="index.html" alt=""> 싼ㅡ택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html" alt="">
+                  <img src="../images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html" alt="">
+                  <img src="../images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="../images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="../images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="../images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="../images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="../images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="button-all d-none">
+              <button>배송조회</button>
+              <button>로 그인</button>
+            </div>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-pay">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="box-item">
+            <div class="item-info">
+              <div class="left">
+                <div class="icon" onclick="goBack()">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="des">
+                  <p>
+                    <strong>통관 정보</strong>
+                  </p>
+                  <p>세관에 제출되는 내용입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-checkbox">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="form-box">
+            <div class="title">개인통관고유부호를 입력하세요.</div>
+            <div class="des">받는 분의 개인통관고유부호를 입력하세요.</div>
+            <div class="form-button">
+              <input
+                type="text"
+                name=""
+                placeholder="P자로 시작하는 13자리번호"
+              />
+              <button>확인하기</button>
+            </div>
+            <div class="checkbox">
+              <div class="title">반송될 경우 처리여부를 선택하세요.</div>
+              <div class="form-check">
+                <div class="checkbox-item">
+                  <input type="radio" id="반송포기" name="반송처리" checked />
+                  <label for="반송포기">반송 포기</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="radio" id="발송인에게 반송" name="반송처리" />
+                  <label for="발송인에게 반송">발송인에게 반송</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-item-select">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="title title_m">물품상세 등록</div>
+          <div class="list-options">
+            <div class="name title_m">① 카테고리를 선택하세요.</div>
+            <div class="item-option">
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_01.png" />
+                  <div class="thread">의류/잡화</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_02.png" />
+                  <div class="thread">뷰티</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_03.png" />
+                  <div class="thread">출산/유아동</div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_04.png" />
+                  <div class="thread">주방용품</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_05.png" />
+                  <div class="thread">생활용품</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_06.png" />
+                  <div class="thread">홈인테리어</div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_07.png" />
+                  <div class="thread">가전디지털</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_08.png" />
+                  <div class="thread">스포츠/레저</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_09.png" />
+                  <div class="thread">자동차용품</div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_10.png" />
+                  <div class="thread">가전디지털</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_11.png" />
+                  <div class="thread">완구/취미</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_12.png" />
+                  <div class="thread">문구오피스</div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_13.png" />
+                  <div class="thread">반려동물용품</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_14.png" />
+                  <div class="thread">헬스/건강식품</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-box">
+                  <img src="../images/ic_15.png" />
+                  <div class="thread">기타</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="name title_m">② 상세정보를 입력하세요.</div>
+            <div class="description">
+              모든 내용은 <span>영문으로 정확히 기재</span> 되어야 합니다.
+            </div>
+            <div class="form-box">
+              <div class="form-input">
+                <label>브랜드명을 써주세요.</label>
+                <input type="text" name="" id="" placeholder="예) NIKE" />
+              </div>
+              <div class="form-input">
+                <label>어떤 제품인가요?</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="예) Men's Short Sleeve T-shirt"
+                />
+              </div>
+              <div class="form-input">
+                <label>사이즈를 써주세요.</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="예) M 또는 66 등"
+                />
+              </div>
+
+              <div class="form-checkbox">
+                <label for="">사용여부를 선택하세요.</label>
+                <div class="checkbox">
+                  <div class="input-checkbox">
+                    <input type="radio" name="used" id="used" checked />
+                    <span>NEW</span>
+                  </div>
+                  <div class="input-checkbox">
+                    <input type="radio" name="used" id="used" />
+                    <span>USED</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-input">
+                <label>색깔을 써주세요.</label>
+                <input type="text" name="" id="" placeholder="예) BLACK " />
+              </div>
+
+              <div class="form-group-box">
+                <label for="">같은 품목은 몇 개인가요?</label>
+                <div class="form-select">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="숫자를 쓰세요."
+                  />
+                  <select>
+                    <option value="">선택</option>
+                    <option value="pieces">pieces</option>
+                    <option value="carats">carats</option>
+                    <option value="centigrams">centigrams</option>
+                    <option value="centimeters">centimeters</option>
+                    <option value="content kilogram">content kilogram</option>
+                    <option value="cubic centimeters">cubic centimeters</option>
+                    <option value="cubic feet">cubic feet</option>
+                    <option value="cubic meters">cubic meters</option>
+                    <option value="dozen">dozen</option>
+                    <option value="dozen pairs">dozen pairs</option>
+                    <option value="dozen pieces">dozen pieces</option>
+                    <option value="each">each</option>
+                    <option value="gallon">gallon</option>
+                    <option value="gold content grams">
+                      gold content grams
+                    </option>
+                    <option value="grams">grams</option>
+                    <option value="gross">gross</option>
+                    <option value="gross lines">gross lines</option>
+                    <option value="hundred">hundred</option>
+                    <option value="jewels">jewels</option>
+                    <option value="kilograms">kilograms</option>
+                    <option value="kilograms total sugar">
+                      kilograms total sugar
+                    </option>
+                    <option value="linear feet">linear feet</option>
+                    <option value="linear meters">linear meters</option>
+                    <option value="linear yards">linear yards</option>
+                    <option value="liters">liters</option>
+                    <option value="meters">meters</option>
+                    <option value="milligrams">milligrams</option>
+                    <option value="milliliters">milliliters</option>
+                    <option value="no unit required">no unit required</option>
+                    <option value="number">number</option>
+                    <option value="ounces">ounces</option>
+                    <option value="pair">pair</option>
+                    <option value="pounds">pounds</option>
+                    <option value="proof liters">proof liters</option>
+                    <option value="quarts">quarts</option>
+                    <option value="short tons">short tons</option>
+                    <option value="silver content grams">
+                      silver content grams
+                    </option>
+                    <option value="square">square</option>
+                    <option value="square centimeters">
+                      square centimeters
+                    </option>
+                    <option value="square feet">square feet</option>
+                    <option value="square inches">square inches</option>
+                    <option value="square meters">square meters</option>
+                    <option value="square yards">square yards</option>
+                    <option value="thousand">thousand</option>
+                    <option value="thousand cubic meters">
+                      thousand cubic meters
+                    </option>
+                    <option value="thousand meters">thousand meters</option>
+                    <option value="troy ounces">troy ounces</option>
+                    <option value="yards">yards</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group-box">
+                <label for="">같은 품목의 무게는 얼마인가요?</label>
+                <div class="form-select">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="숫자를 쓰세요."
+                  />
+                  <select>
+                    <option>선택</option>
+                    <option>LB</option>
+                    <option>KG</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group-box">
+                <label for="">같은 품목의 가격은 얼마인가요?</label>
+                <div class="form-select">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="숫자를 쓰세요."
+                  />
+                  <p>US Dollars</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="link">
+            <a href="#" class="link-to">↓ 상세목록에 추가</a>
+          </div>
+          <div class="text-description">
+            <b> 👉 등록할 다른 물품이 또 있다면</b><br />
+            상세정보를 입력한 뒤 상세목록에 추가해주세요. 모두 추가했다면
+            택배박스 내외부 사진을 등록하고 저장하세요.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="width-default">
+      <div class="report">
+        <table class="table table-responsive-md">
+          <thead>
+            <tr>
+              <th></th>
+              <th>브랜드</th>
+              <th>제품</th>
+              <th>사이즈</th>
+              <th>사용여부</th>
+              <th>색깔</th>
+              <th>수량</th>
+              <th>무게</th>
+              <th>단가</th>
+              <th>총 가격</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="far fa-window-close"></i></td>
+              <td>NIKE</td>
+              <td>T-shirts</td>
+              <td>M</td>
+              <td>NEW</td>
+              <td>White</td>
+              <td>2</td>
+              <td>10kg</td>
+              <td>$100.00</td>
+              <td>$200.00</td>
+            </tr>
+            <tr>
+              <td><i class="far fa-window-close"></i></td>
+              <td>NIKE</td>
+              <td>T-shirts</td>
+              <td>M</td>
+              <td>NEW</td>
+              <td>White</td>
+              <td>2</td>
+              <td>10kg</td>
+              <td>$100.00</td>
+              <td>$200.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="total">
+          <div class="name">총 세관신고 가격</div>
+          <div class="value">$100.00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="select-item">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="title title_m">
+            포장된 택배박스의 <strong>내외부 사진을</strong> 등록하세요.
+          </div>
+          <label class="upload-label">
+            <label>
+              <i class="fal fa-camera"></i>
+              <span>사진 등록</span>
+            </label>
+            <input
+              type="file"
+              class="upload-file-input"
+              id="upload-file"
+              name="upload-file"
+            />
+          </label>
+          <div class="list-box">
+            <div class="item">
+              <div class="image">
+                <img src="../images/ic_16.png" />
+              </div>
+              <div class="thread">
+                <div class="name">202204_....jpg</div>
+                <div class="file">643kb files_w...</div>
+                <div class="action"><i class="far fa-times"></i> Delete</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="../images/ic_16.png" />
+              </div>
+              <div class="thread">
+                <div class="name">202204_....jpg</div>
+                <div class="file">643kb files_w...</div>
+                <div class="action"><i class="far fa-times"></i> Delete</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="../images/ic_16.png" />
+              </div>
+              <div class="thread">
+                <div class="name">202204_....jpg</div>
+                <div class="file">643kb files_w...</div>
+                <div class="action"><i class="far fa-times"></i> Delete</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-back-next">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="button-box">
+            <button class="back" onclick="goBack()">
+              <i class="far fa-chevron-left"></i>
+            </button>
+            <button class="next" onclick="openModal('popupLogin', true)">
+              저장
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="../images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="../images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/"> <img src="../images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupLogin" class="overlay popup-confirm">
+      <div class="popup">
+        <div class="content">
+          <div class="title">
+            통관정보에 <br />
+            저장되었습니다.
+          </div>
+          <button onclick="openModal('popupLogin', false)">닫기</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+  </body>
+</html>

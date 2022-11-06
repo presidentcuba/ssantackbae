@@ -1,0 +1,582 @@
+.register-container {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin: 10px 0px !important;
+}
+.estimate-plus-result {
+  margin-top: 60px;
+  padding: 60px 10px;
+  .item-info {
+    margin-top: 30px;
+    .box-width {
+      background-color: #223591;
+      border-radius: 10px;
+      padding: 20px 0px;
+      .info-box {
+        background-color: #223591;
+        padding: 20px 15px;
+        border-radius: 12px;
+        .button {
+          margin-bottom: 20px;
+          padding: 0;
+          a {
+            display: inline-block;
+            padding: 3px 7px;
+            color: #fff;
+            border-radius: 15px;
+            background-color: #223591;
+            border: 1px solid #fff;
+          }
+        }
+        .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px 0px;
+
+          p {
+            margin-bottom: 0;
+            color: #fff;
+            font-weight: 550;
+            span {
+              &:last-child {
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+        .item-second {
+          margin-bottom: 10px;
+        }
+        .item-active {
+          padding-top: 10px;
+          border-top: 1px solid #fff;
+          p {
+            font-weight: 700;
+            color: #ffb300;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .item-branch {
+    margin: 30px 0px;
+    .box-width {
+      .text-title {
+        padding: 20px 0px;
+        span {
+          display: block;
+          color: #707070 !important;
+          font-size: 16px !important;
+          &:nth-child(1) {
+            font-size: 30px !important;
+            color: #000 !important;
+          }
+          &:nth-child(2) {
+            font-size: 16px !important;
+          }
+        }
+      }
+      .branch-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        padding: 20px 0px;
+        .content {
+          .item {
+            padding: 10px 0px;
+            .item-box {
+              display: flex;
+              justify-content: space-between;
+              .left {
+                > span {
+                  color: #707070;
+                  display: block;
+                  font-weight: 400;
+                }
+                .name {
+                  color: #000;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+              .right {
+                a {
+                  text-decoration: underline;
+                  font-size: 15px;
+                  color: #5e8eff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .item-register {
+    margin-top: 30px;
+    .box-width {
+      .text-title {
+        padding: 20px 0px;
+        span {
+          display: block;
+          &:nth-child(1) {
+            font-size: 30px;
+            color: #000;
+          }
+          &:nth-child(2) {
+            font-size: 16px;
+            color: #707070;
+          }
+        }
+      }
+      .register-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        margin: 10px 0px !important;
+        .content {
+          .item {
+            padding: 20px 0px;
+            .item-box {
+              > span {
+                color: #707070;
+                display: block;
+                font-weight: 400;
+              }
+              .name {
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-register {
+    padding: 20px 0px;
+    .register-container {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      padding: 30px 0px;
+      .content {
+        .register-discount {
+          padding: 20px 0px;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+          }
+          .form-item {
+            display: flex;
+            width: 100%;
+            .form-input {
+              width: 90%;
+              input {
+                width: 100%;
+                border: 1px solid #cccccc;
+                background-color: #fff;
+                padding: 10px 5px;
+                outline: unset;
+                &:focus-visible {
+                  outline: unset;
+                }
+              }
+            }
+            button {
+              width: 10%;
+              background-color: #fff;
+              border: 1px solid #cccccc;
+              outline: unset;
+              &:focus {
+                outline: unset;
+              }
+            }
+          }
+        }
+        .register-paypal {
+          padding: 30px 0px;
+          border-bottom: 1px solid #eeeeee;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+          }
+          .form-item {
+            .form-checkbox {
+              display: flex;
+              align-items: center;
+              padding: 5px 0px;
+              .des {
+                width: 20%;
+                color: #707070;
+                font-size: 16px;
+              }
+              .name {
+                width: 10%;
+                margin-left: 25px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .slide-card {
+          padding: 15px;
+          .title {
+            display: flex;
+            justify-content: space-between;
+            a {
+              text-decoration: underline;
+            }
+          }
+          .slide {
+            margin: 20px 0px;
+            .item {
+              border-radius: 10px;
+              height: 120px;
+              padding: 10px;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              .name {
+                display: block;
+                width: 50%;
+                font-weight: 550;
+                padding: 2px 4px;
+                background-color: #eaebf0;
+                border-radius: 15px;
+              }
+            }
+            .item-one {
+              background-color: #17c2ff;
+            }
+            .item-two {
+              background-color: #ffb300;
+            }
+          }
+          .des {
+            text-align: center;
+          }
+        }
+
+        .register-tax {
+          padding: 30px 0px;
+          border-bottom: 1px solid #eeeeee;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+          }
+          .form-item {
+            .form-checkbox {
+              display: flex;
+              align-items: center;
+              padding: 5px 0px;
+              .name {
+                margin-left: 10px;
+                color: #707070;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .register-total {
+          padding: 30px 0px;
+          .width-default {
+            label {
+              font-size: 20px;
+              color: #223591;
+            }
+            .total-content {
+              .item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 7px;
+                .des {
+                  font-size: 16px;
+                  color: #707070;
+                }
+                &:nth-child(1) {
+                  .number {
+                    font-size: 16px;
+                    color: #333333;
+                  }
+                }
+                &:nth-child(3) {
+                  .number {
+                    font-size: 16px;
+                    color: #5e8eff;
+                  }
+                }
+                &:nth-child(4) {
+                  .number {
+                    font-size: 16px;
+                    color: #333333;
+                  }
+                }
+                &:nth-child(5) {
+                  padding-top: 14px;
+                  border-top: 2px solid #cdcdcd;
+                  .number {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #ffb300;
+                  }
+                  .des {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .item-des {
+    .box-width {
+      padding: 20px 0px;
+      background-color: #eeeeee;
+      border-radius: 10px;
+      .text {
+        span {
+          display: block;
+          font-size: 15px;
+          color: #000;
+          &:nth-child(1) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .item-shipping {
+    padding: 20px 0px;
+    .width-default {
+      .text {
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+      }
+      .des {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.bar-under {
+  display: none;
+  height: 7px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.box-width {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+  // padding: 0px 15px;
+}
+.button-back-next {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  cursor: pointer;
+  .button-box {
+    display: flex;
+    justify-content: flex-end;
+    .back {
+      width: 20%;
+      border: 1px solid #223591;
+      background-color: #ffff;
+      padding: 7px 25px;
+      border-radius: 3px;
+      i {
+        font-size: 20px;
+        color: #223591;
+      }
+      &:focus {
+        outline: unset;
+      }
+    }
+    .next {
+      width: 80%;
+      border-radius: 3px;
+      border: 1px solid #223591;
+      background-color: #223591;
+      padding: 7px 25px;
+      color: #fff;
+      font-size: 16px;
+      margin-left: 10px;
+      &:focus {
+        outline: unset;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .bar-under {
+    display: block !important;
+  }
+}
+
+@include responsive("small") {
+  .estimate-plus-result {
+    .form-register {
+      padding: 20px 0px;
+      .register-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        padding: 30px 0px;
+        .content {
+          .register-discount {
+            padding: 20px 0px;
+            label {
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+            }
+            .form-item {
+              display: flex;
+              width: 100%;
+              .form-input {
+                width: 90%;
+                input {
+                  width: 100%;
+                  border: 1px solid #cccccc;
+                  background-color: #fff;
+                  padding: 10px 5px;
+                  outline: unset;
+                  &:focus-visible {
+                    outline: unset;
+                  }
+                }
+              }
+              button {
+                width: 25%;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                outline: unset;
+                margin-left: 10px;
+                &:focus {
+                  outline: unset;
+                }
+              }
+            }
+          }
+          .register-paypal {
+            padding: 30px 0px;
+            border-bottom: 1px solid #eeeeee;
+            label {
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+            }
+            .form-item {
+              .form-checkbox {
+                display: flex;
+                align-items: center;
+                padding: 5px 0px;
+                .des {
+                  width: 40% !important;
+                  color: #707070;
+                  font-size: 16px;
+                }
+                .name {
+                  width: 25%;
+                  margin-left: 25px;
+                  color: #000;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .register-tax {
+            padding: 30px 0px;
+            border-bottom: 1px solid #eeeeee;
+            label {
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+            }
+            .form-item {
+              .form-checkbox {
+                display: flex;
+                align-items: center;
+                padding: 5px 0px;
+                .name {
+                  margin-left: 10px;
+                  color: #707070;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .register-total {
+            padding: 30px 0px;
+            .width-default {
+              label {
+                font-size: 20px;
+                color: #223591;
+                font-weight: 550;
+              }
+              .total-content {
+                .item {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 7px;
+                  .des {
+                    font-size: 16px;
+                    color: #707070;
+                  }
+                  &:nth-child(1) {
+                    .number {
+                      font-size: 16px;
+                      color: #333333;
+                    }
+                  }
+                  &:nth-child(3) {
+                    .number {
+                      font-size: 16px;
+                      color: #5e8eff;
+                    }
+                  }
+                  &:nth-child(4) {
+                    .number {
+                      font-size: 16px;
+                      color: #333333;
+                    }
+                  }
+                  &:nth-child(5) {
+                    padding-top: 14px;
+                    border-top: 2px solid #cdcdcd;
+                    .number {
+                      font-size: 20px;
+                      font-weight: 600;
+                      color: #ffb300;
+                    }
+                    .des {
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.exchange_details {
+  padding: 0px 20px;
+  .box-width {
+    .width-default {
+      border: 1px solid #cccccc;
+      border-radius: 15px;
+      margin: 10px 0px;
+      padding: 20px 20px;
+      .item-box {
+        .content-top {
+          padding-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            line-height: 1.7;
+          }
+          .right {
+            a {
+              color: #5e8eff;
+              text-decoration: underline;
+            }
+          }
+        }
+        .content-body {
+          display: flex;
+          padding: 15px 0px;
+          border-top: 1px solid #cccccc;
+          border-bottom: 1px solid #cccccc;
+          .left {
+            margin-right: 10px;
+            span {
+              display: block;
+              padding: 3px 15px;
+              border: 1px solid #9a9b9e;
+              border-radius: 15px;
+              color: #9a9b9e;
+              font-size: 13px;
+            }
+          }
+          .right {
+          }
+        }
+        .content-bot {
+          padding-top: 15px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            font-size: 20px;
+            color: #ffb300;
+          }
+          .right {
+            display: flex;
+            a {
+              display: block;
+              padding: 7px 10px;
+              border-radius: 3px;
+              border: 1px solid #cccccc;
+              color: #9a9b9e;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .item {
+        .title {
+          margin-bottom: 10px;
+        }
+        .des {
+          color: #666666;
+        }
+        .name {
+          margin-bottom: 10px;
+        }
+        .info {
+          color: #666666;
+          padding-bottom: 15px;
+          p {
+            margin-bottom: 7px;
+          }
+        }
+        .sub-item {
+          color: #666666;
+          padding: 15px 0px;
+          border-top: 1px solid #cccccc;
+          .time {
+            color: #5e8eff;
+          }
+        }
+      }
+    }
+  }
+}

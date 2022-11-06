@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="../scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../scss/owl.theme.default.min.css" />
+
+    <title>싼ㅡ택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="images/logo.png" alt="" class="logo-mobile" />
+              <span class="title_m">싼택배 </span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button onclick="openModal('popupLogin', true)">로그인</button>
+                <button onclick="openModal('popupRegister', true)">
+                  회원가입
+                </button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/mypage/order_list.html" alt="">
+                  <img src="images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/mypage/pay_method.html" alt="">
+                  <img src="images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/mypage/mycoupon.html" alt="">
+                  <img src="images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/mypage/cancel_exchange_return_list.html"
+                  alt=""
+                >
+                  <img src="images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" alt="">
+                  <img src="images/menu-05.png" /> 문의내역
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/mypage/cs.html" alt="">
+                  <img src="images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-pay">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="box-item">
+            <div class="item-info">
+              <div class="left">
+                <div class="icon" onclick="goBack()">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="des">
+                  <p>
+                    <strong>발송정보</strong>
+                  </p>
+                  <p>
+                    <span style="margin-right: 0px"></span>
+                    <span class="sub-text-des" style="font-size: 16px"
+                      >발송정보를 확인하고 잘 보내주세요.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shipping-info">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="list-item">
+            <div class="item">
+              <div class="item-detail">
+                <div class="title">
+                  <span>방문택배</span>
+                  <a href="#"></a>
+                </div>
+                <div class="des">
+                  <span
+                    >발송일에 택배를 수거를 위해 댁으로 방문합
+                    니다.(Pickup)</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-detail">
+                <div class="title">
+                  <span>발송일</span>
+                  <a
+                    class="active"
+                    onclick="goNextPage('info_shippingdate.html')"
+                    >수정하기</a
+                  >
+                </div>
+                <div class="des">
+                  <span class="title_b"><strong>2022-09-28</strong></span>
+                </div>
+                <p></p>
+                <div class="item-detail">
+                  <div class="title">
+                    <span>픽업예약번호</span>
+                  </div>
+                  <div class="des text-des">
+                    <span
+                      >Fedex Pickup Confirmation No. : CPU2968021
+                      370/2022-05-19,
+                    </span>
+                    <span
+                      >Location : 35 Oxford Street Perkins hall #107 Cambridge
+                      MA 02138</span
+                    >
+                  </div>
+                  <div class="btn-box">
+                    <button>방문안내</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-detail">
+                <div class="title">
+                  <span>레이블 프린트</span>
+                </div>
+                <div class="des">
+                  <span>배송 레이블을 인쇄하여 박스에 부착해주세요.</span>
+                </div>
+                <p></p>
+                <div class="title_m">
+                  <span>미국 트래킹번호 <strong>273248313606</strong> </span>
+                </div>
+                <div class="print">
+                  <div class="image">
+                    <img src="../images/print_label.png" />
+                  </div>
+                  <a href="">PRINT</a>
+                </div>
+
+                <div class="btn-box">
+                  <button onclick="goNextPage('')">레이블이용 안내</button>
+                  <button onclick="goNextPage('')">박스포장 안내</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <div class="width-default">
+        <button onclick="goNextPage('mypage_order.html')">
+          주문페이지로 이동
+        </button>
+      </div>
+    </div>
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="../images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="../images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/"> <img src="../images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+  </body>
+</html>

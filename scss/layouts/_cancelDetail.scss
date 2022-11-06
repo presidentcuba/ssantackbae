@@ -1,0 +1,101 @@
+.cancel_details {
+  padding: 0px 20px;
+  .box-width {
+    .width-default {
+      border: 1px solid #cccccc;
+      border-radius: 15px;
+      margin: 10px 0px;
+      padding: 20px 20px;
+      .item-box {
+        .content-top {
+          padding-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            line-height: 1.7;
+          }
+          .right {
+            a {
+              color: #5e8eff;
+              text-decoration: underline;
+            }
+          }
+        }
+        .content-body {
+          display: flex;
+          padding: 15px 0px;
+          border-top: 1px solid #cccccc;
+          border-bottom: 1px solid #cccccc;
+          .left {
+            margin-right: 10px;
+
+            span {
+              display: block;
+              padding: 3px 15px;
+              border: 1px solid #9a9b9e;
+              border-radius: 15px;
+              color: #9a9b9e;
+              font-size: 13px;
+            }
+          }
+          .right {
+          }
+        }
+        .content-bot {
+          padding-top: 15px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            font-size: 20px;
+            color: #ffb300;
+          }
+        }
+        .des {
+          color: #9a9b9e;
+          font-size: 16px;
+        }
+      }
+      .item {
+        .top {
+          .title {
+            margin-bottom: 10px;
+          }
+          .des {
+            display: flex;
+            justify-content: space-between;
+            color: #666666;
+          }
+        }
+        .body {
+          padding: 20px 0px;
+          margin: 20px 0px;
+          border-top: 1px solid #cccccc;
+          border-bottom: 1px solid #cccccc;
+          line-height: 1.7;
+          .item {
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: #666666;
+            }
+          }
+        }
+        .bot {
+          .item {
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: #666666;
+              &:nth-child(1) {
+                font-weight: 550;
+              }
+              &:nth-child(2) {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

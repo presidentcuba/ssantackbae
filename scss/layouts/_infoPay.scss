@@ -1,0 +1,45 @@
+.info_pay {
+  .box-width {
+    .width-default {
+      .pay-box {
+        a {
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 12px;
+            margin: 15px 0px;
+            .left {
+              color: #223591;
+              strong {
+                font-size: 20px;
+                color: #223591;
+                font-family: GmarketSansMedium;
+              }
+              .date {
+                display: block;
+                font-size: 16px;
+                color: #9a9b9e;
+                font-family: GmarketSansMedium;
+              }
+              .price {
+                color: #ffb300;
+                font-weight: 600;
+                font-size: 20px;
+                font-family: GmarketSansMedium;
+              }
+            }
+            .right {
+              i {
+                color: #000;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

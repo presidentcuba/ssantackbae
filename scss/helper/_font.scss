@@ -1,0 +1,42 @@
+a:link {
+  text-decoration: unset;
+}
+
+body {
+  font-family: "Noto Sans KR", Roboto, GmarketSansMedium, Arial;
+}
+
+.title_b {
+  font-family: GmarketSansMedium;
+  font-weight: bold;
+  display: block;
+}
+.title_m {
+  font-family: GmarketSansMedium;
+  font-weight: 400;
+  display: block;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**********************************/
+.title_b {
+  font-family: GmarketSansMedium;
+  font-weight: bold;
+}
+.title_m {
+  font-family: GmarketSansMedium;
+  font-weight: 400;
+}

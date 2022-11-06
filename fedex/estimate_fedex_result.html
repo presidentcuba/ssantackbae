@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="../scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../scss/owl.theme.default.min.css" />
+
+    <title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="../images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배</span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="../index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/order_list.html" alt="">
+                  <img src="../images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/pay_method.html" alt="">
+                  <img src="../images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/mycoupon.html" alt="">
+                  <img src="../images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cancel.html" alt="">
+                  <img src="../images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/qna.html" alt="">
+                  <img src="../images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/faq.html" alt="">
+                  <img src="../images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cs.html" alt="">
+                  <img src="../images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="estimate-result" id="estimateResult">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="title-page">
+            <div class="title">페덱스택배</div>
+            <div class="des">
+              <p><strong>택배요금</strong>이 이렇게 나왔어요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-info">
+        <div class="box-width">
+          <div class="width-default">
+            <div class="info-container">
+              <div class="item">
+                <span>무게 </span>
+                <span>5 LB</span>
+              </div>
+              <div class="item">
+                <span>부피무게 </span>
+                <span>10x10x10 IN </span>
+                <span>8 LB</span>
+              </div>
+              <div class="item">
+                <span></span>
+                <span class="price">$16.00</span>
+              </div>
+            </div>
+            <div class="des"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-branch">
+        <div class="box-width">
+          <div class="width-default">
+            <div class="text-title">
+              <span> <strong>가까운 페덱스 취급점</strong>을 확인하세요</span>
+              <span
+                >신청 후 가까운 페덱스 취급점으로 택배를 가져다 주세요.</span
+              >
+            </div>
+          </div>
+          <div class="branch-container">
+            <div class="content">
+              <div class="list-branch">
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <div class="left">
+                        <span class="name">LA 매장</span>
+                        <span class="address"
+                          >4840 Irvine Blvd, Ste 202IRVINE,</span
+                        >
+                        <span class="ca">CA 92620</span>
+                      </div>
+                      <div class="right">
+                        <a onclick="showModalPage('introSlide', false)"
+                          >위치보기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <div class="left">
+                        <span class="name">LA 매장</span>
+                        <span class="address"
+                          >4840 Irvine Blvd, Ste 202IRVINE,</span
+                        >
+                        <span class="ca">CA 92620</span>
+                      </div>
+                      <div class="right">
+                        <a onclick="showModalPage('introSlide', false)"
+                          >위치보기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <div class="left">
+                        <span class="name">LA 매장</span>
+                        <span class="address"
+                          >4840 Irvine Blvd, Ste 202IRVINE,</span
+                        >
+                        <span class="ca">CA 92620</span>
+                      </div>
+                      <div class="right">
+                        <a onclick="showModalPage('introSlide', false)"
+                          >위치보기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-register">
+        <div class="box-width">
+          <div class="width-default">
+            <div class="text-title">
+              <span> 페덱스택배 <strong>신청하기</strong></span>
+              <span>신청후 가까운 페덱스 취급점으로 가져다 주세요.</span>
+            </div>
+          </div>
+          <div class="register-container">
+            <div class="content">
+              <div class="list-register">
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <span class="name">보내는 곳</span>
+                      <span class="address"
+                        >4840 Irvine Blvd, Ste 202IRVINE,
+                      </span>
+                      <span class="ca">CA 92620</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <span class="name">보내는 곳</span>
+                      <span class="address"
+                        >4840 Irvine Blvd, Ste 202IRVINE,
+                      </span>
+                      <span class="ca">CA 92620</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="width-default">
+                    <div class="item-box">
+                      <span class="name">배송목적</span>
+                      <span class="ca">선물</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-register">
+        <div class="box-width">
+          <div class="register-container">
+            <div class="content">
+              <div class="register-discount">
+                <div class="width-default">
+                  <label
+                    >쿠폰코드 등록
+                    <p>(할인쿠폰 <span>2장</span> )</p>
+                  </label>
+                  <div class="form-item">
+                    <div class="form-input">
+                      <input type="text" name="discount" />
+                    </div>
+                    <button>쿠폰적용</button>
+                  </div>
+                </div>
+              </div>
+              <div class="register-discount">
+                <div class="width-default">
+                  <label
+                    >쿠폰코드 등록
+                    <p>(보유포인트 <span>500P</span> )</p></label
+                  >
+                  <div class="form-item">
+                    <div class="form-input">
+                      <input type="text" name="discount" />
+                    </div>
+                    <div class="form-checkbox">
+                      <input type="checkbox" class="checkbox" name="paypal" />
+                      <div class="name item">모두사용</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="bar-under"></div>
+              <div class="register-paypal">
+                <div class="width-default">
+                  <label>결제수단</label>
+                  <div class="form-item">
+                    <div class="form-checkbox">
+                      <input type="radio" class="checkbox" name="paypal" />
+                      <div class="name item">PayPal</div>
+                      <div class="des item">Express Checkout</div>
+                    </div>
+                    <hr />
+                    <div class="form-checkbox">
+                      <input type="radio" class="checkbox" name="paypal" />
+                      <div class="name item">신용카드</div>
+                      <div class="des item">Mastercard</div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="register-container">
+            <div class="content">
+              <div class="slide-card">
+                <div class="title">
+                  <strong>결제수단</strong>
+                  <a href="#">설정</a>
+                </div>
+                <div class="slide owl-carousel owl-theme" id="owl-two">
+                  <div class="item item-one">
+                    <div class="name">CHASE</div>
+                    <div class="key">CHASE ****-****-0000-****</div>
+                  </div>
+                  <div class="item item-two">
+                    <div class="name">CHASE</div>
+                    <div class="key">CHASE ****-****-0000-****</div>
+                  </div>
+                  <div class="item item-three">
+                    <div class="name">CHASE</div>
+                    <div class="key">CHASE ****-****-0000-****</div>
+                  </div>
+                </div>
+                <div class="des">현재 선택된 결제 수단</div>
+              </div>
+            </div>
+          </div>
+          <div class="register-container">
+            <div class="content">
+              <div class="register-tax">
+                <div class="width-default">
+                  <label>관세, 세금, 수수료 지불 방법</label>
+                  <div class="form-item">
+                    <div class="form-checkbox">
+                      <input type="radio" checked class="checkbox" name="tax" />
+                      <div class="name item">발송인에게 청구</div>
+                    </div>
+
+                    <div class="form-checkbox">
+                      <input type="radio" class="checkbox" name="tax" />
+                      <div class="name item">수취인에게 청구</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="register-container">
+            <div class="content">
+              <div class="register-total">
+                <div class="width-default">
+                  <label>지금 결제하실 금액</label>
+                  <div class="total-content">
+                    <div class="item">
+                      <div class="des">창고입고비용</div>
+                      <div class="number">$16.00</div>
+                    </div>
+                    <div class="item">
+                      <div class="des">한국택배비용</div>
+                      <div class="number">$50.00</div>
+                    </div>
+                    <div class="item item-active">
+                      <div class="des">쿠폰할인</div>
+                      <div class="number">-$6.00</div>
+                    </div>
+                    <div class="item item-active">
+                      <div class="des">포인트사용</div>
+                      <div class="number">-$0.00</div>
+                    </div>
+                    <div class="item">
+                      <div class="des">포인트사용</div>
+                      <div class="number">$0.00</div>
+                    </div>
+                    <div class="item">
+                      <div class="des">결제금액</div>
+                      <div class="number">$10.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-des item-des-fedex">
+        <div class="box-width">
+          <div class="width-default">
+            <div class="text">
+              <div class="des">적립포인트</div>
+              <div class="number">10P</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item-des-list">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="text-list">
+            <span
+              >※ 이 발송물에 위험물 또는 위험 물질이 포함되어 있지 않음에
+              동의합니다.</span
+            >
+            <span
+              >※ 현재 결제되는 금액은 고객 스스로 입력한 무게와 부피에 대한
+              배송금액으로 실제 측정시 추가/감소요금이 발생될 수 있습니다. 이에
+              동의합니다.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item-shipping">
+      <div class="width-default">
+        <div class="text">배송안내</div>
+        <div class="des">
+          예상 소요시간 영업일 기준 3~5일입니다. 예상 소요시간은 실제 구간별
+          현지상황이나 택배사 사정에 따라 단축 또는 증가될 수 있습니다.
+        </div>
+      </div>
+    </div>
+    <div class="button-back-next">
+      <div class="box-width">
+        <div class="button-box">
+          <a href="estimate_5usd.html"
+            ><button class="back">다시 견적하기</button></a
+          >
+          <a href="/mypage/order_complete.html"
+            ><button class="next">신청하기</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="../images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="../images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/"> <img src="../images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide -->
+    <div class="pick-slide" id="introSlide">
+      <div class="pick-box pick-map">
+        <div class="width-default">
+          <div class="name">
+            <!-- <div class="text">
+              <img src="../images/icon-close.png" />
+              <span> 오늘하루 보지 않기</span>
+            </div> -->
+            <div class="icon-close">
+              <a onclick="showModalPage('introSlide', true)"
+                ><i class="far fa-times"></i
+              ></a>
+            </div>
+          </div>
+          <div id="owl-one" class="list-item owl-carousel owl-theme">
+            <div class="item">
+              <div class="thread thread-estimate">
+                <span>LA 매장</span>
+                <span
+                  >4840 Irvine Blvd, Ste 202IRVINE,<br />
+                  CA 92620</span
+                >
+              </div>
+              <div class="image">
+                <img src="../images/map.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script>
+      $("#owl-two").owlCarousel({
+        loop: true,
+        margin: 10,
+        center: true,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+      $("#owl-one").owlCarousel({
+        loop: true,
+        margin: 10,
+        center: false,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

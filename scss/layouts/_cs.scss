@@ -1,0 +1,22 @@
+.cs-container {
+  .box-width {
+    .width-default {
+      .cs-box {
+        padding-left: 15px;
+        margin-top: 10px;
+        li {
+          list-style: none;
+          a {
+            display: block;
+            padding: 7px 0px;
+            text-align: center;
+            color: #223591;
+            border: 1px solid #223591;
+            margin: 15px 0px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}

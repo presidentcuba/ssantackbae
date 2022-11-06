@@ -1,0 +1,92 @@
+.shipping-info {
+  .box-width {
+    .width-default {
+      .list-item {
+        .item {
+          padding: 20px;
+          border: 1px solid #cccccc;
+          border-radius: 15px;
+          margin: 15px 0px;
+          .item-detail {
+            margin-bottom: 10px;
+            .title {
+              display: flex;
+              justify-content: space-between;
+              font-size: 16px;
+              margin-bottom: 10px;
+              span {
+                font-weight: 600;
+                color: #000;
+              }
+              a {
+                text-decoration: underline;
+                color: #9a9b9e;
+                &.active {
+                  color: #5e8eff;
+                }
+              }
+            }
+            .des {
+              span {
+                display: block;
+                font-size: 16px;
+                color: #9a9b9e;
+              }
+              .title_b {
+                color: #5e8eff !important;
+              }
+            }
+            .title_m {
+              strong {
+                color: #5e8eff !important;
+                margin-left: 5px;
+              }
+            }
+            .print {
+              display: flex;
+              margin-top: 15px;
+              margin-bottom: 40px;
+              .image {
+                flex: 1;
+              }
+              a {
+                flex: 1;
+                display: block;
+                background-color: #223591;
+                border-radius: 10px;
+                border: 2px solid #5e8eff;
+                color: #fff;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+            .text-des {
+              span {
+                font-size: 13px;
+                margin-bottom: 5px;
+              }
+            }
+            .btn-box {
+              margin-top: 20px;
+              button {
+                color: #333333;
+                padding: 3px 10px;
+                border-radius: 15px;
+                border: 1px solid #333333;
+                background-color: #fff;
+                &:nth-child(2) {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sub-text-des {
+  font-size: 16px !important;
+}

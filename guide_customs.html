@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="scss/owl.theme.default.min.css" />
+
+    <title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배 </span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html" alt="">
+                  <img src="images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html" alt="">
+                  <img src="images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-pay">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="box-item">
+            <div class="item-info">
+              <div class="left">
+                <div class="icon" onclick="goBack()">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="des">
+                  <p>
+                    <strong class="title_b">통관안내</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-guide">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="list">
+            <div class="item">
+              <div class="title">받는 분의 필수 정보</div>
+              <div class="sub-item">
+                <div class="sub-title">받는 분의 실명</div>
+                <div class="des">
+                  주민등록번호에 나온 이름을 기입합니다. 실명 외의 이름 기입으로
+                  인한 문제발생시 어떠한 책임이 없음을 알려드립니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title">한국 전화번호</div>
+                <div class="des">
+                  핸드폰와 일반전화번호로 통화가능한 번호를 최대 2개 기입합니다.
+                  (050 국번의 안심전화 번호 사용금지)
+                </div>
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title">한국 주소</div>
+                <div class="des">
+                  정확한 도로명 주소와 우편번호 5자리를 기입 합니다.
+                </div>
+                <a
+                  href="https://www.juso.go.kr/openIndexPage.do"
+                  target="_blank"
+                  class="link-to"
+                  >한국 도로명 주소 확인 →</a
+                ><br /><br /><br />
+
+                <div class="des">
+                  보내는 분의 미국주소 또한 CORRECT PHYS ICAL ADDRESS로 ZIP CODE
+                  없는 주소 사용 금지입니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title">받는 분의 개인통관고유부호</div>
+                <div class="des">
+                  모든 한국으로 들어가는 물품이나 서류에는 한국내 받으시는 분의
+                  개인통관고유부호를 필수로 기재해야 하므로 통관지연이 발생하지
+                  않도록 미리 준비해주시기 바랍니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="title">정확한 물품정보 표기</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  모든 물품정보 기입시 영문으로 기입해야 하며 자세히 표기해야
+                  합니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  1) 물품종류이름 : <br />
+                  품목 이름, 상표, 모델번호, 사이즈, 용량<br />
+                  2) 물품의 정확한 수량과 단가<br />
+                  3) 물품의 총 세관보고 금액
+                </div>
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  잘못된 예) T-shirts, vitamins, coffee 등 단순 기입시 통관불가
+                  및 과태료 대상입니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  잘된 예) <br />
+                  NIKE Men's Sneaker shoe, 수량, 색깔 등 <br />
+                  상품명을 모두 기입하세요.
+                </div>
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  ※ 기재하신 내용과 물품의 가격, 수량, 품목 등 이 불일치 할 경우
+                  과태료 및 불이익을 받을 수 있습니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="title">통관 불가 물품</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <ul>
+                    <li>
+                      한국 관세청에서 규정하는 반입금지 성분을 포함한 제품은
+                      일체 수입이 금지됩니다.
+                    </li>
+                    <li>
+                      한국으로 배송하기 전에 반드시 수입가능제 품인지 확인해야
+                      합니다.
+                    </li>
+                    <li>
+                      수입금지품목이 한국내 통관시 발송인과 수 취인의 동의없이
+                      폐기처리되며, 구매 및 배송 비용이 보장되지 않으며,
+                      폐기비용이 청구됩 니다.
+                    </li>
+                    <li>
+                      비타민이나 건강식품의 경우 자가사용 인정 범위는 개인
+                      6병까지만 가능합니다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <span>※</span> 반출입금지품목을 휴대 및 택배반입할 경우 몰수
+                  되며, 세관의 정말검사 및 조사를 받은 후 범죄혐의가 있을 경우
+                  관세법위반 및 형사 법에 의해 처벌될 수 있습니다.
+                </div>
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <span>※</span> 대한민국 관세청의 관세법상 수입금지품목과
+                  관련하여 배송업체 및 배송대행업체는 일체 책임지지 않습니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <span>※</span> 한국 반입 금지품목에 대한 문의
+                  <ul>
+                    <li>관세청 전화번호 1577-8577</li>
+                    <li>식약청 전화번호 1577-1255</li>
+                  </ul>
+                </div>
+                <a href="#" class="link-to">관세청 수출입 통관 →</a>
+                <a href="#" class="link-to">수입금지 식품 확인 →</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="title">선적 불가 물품</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <ul>
+                    <li>스프레이 타입의 가스 충전식 제품</li>
+                    <li>알코올 함량이 높은 가연성 향수</li>
+                    <li>화기성 물품</li>
+                    <li>페인트</li>
+                    <li>드라이 아이스</li>
+                    <li>
+                      폭발 위험이 있는 물품 (석유난로, 알코올, 가 스관련 제품)
+                    </li>
+                    <li>소다 스트림 실린더</li>
+                    <li>배터리</li>
+                    <li>기타 폭발 및 화기 가능성이 있는 모든 제품</li>
+                    <li>
+                      매니큐어 및 손톱강화제, 디퓨저 용액, 전기 면도기 세척액 등
+                      화기성 표시가 있는 제품은 항공기 선적 불가합니다.
+                    </li>
+                    <li>냉장고 (냉장고 냉매제 , 실린더 포함)</li>
+                  </ul>
+
+                  <img src="images/custom_01.png" />
+                  <img src="images/custom_02.png" />
+                  <p>
+                    위 제품들은 (스프레이 타입의 가스충전식) 공 항에서 선적이
+                    금지되어 있는 대표적인 제품들 로, 이 제품들 뿐만 아니라 폭발
+                    가능성이 있는 모든 연성 제품은 해외 공항 선적 규정에 의해
+                    선적이 불가능합니다. <br />
+                    이 점 미리 참고해주시고 구매시 참고하여 절 대로 구매하시는
+                    일이 없도록 주의를 기울여 주시기 바랍니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="des">
+              아래에 해당되는 경우 세관적발시 모든 책임은 받는 분 및 의뢰인의
+              법적책임이며, 모든 관세금 및 추가비용도 받는 분 및 의뢰인의
+              책임입니다.
+            </div>
+            <ul>
+              <li>
+                자가 사용기준으로 어떤한 상업성 사유가 없어야 하며, 개인이
+                사용할 적정의 용량과 갯수 기준이며, 세관보고 내용물품의
+                불일치(가격,갯수,품목)로 관세회피목적이 있는 경우
+              </li>
+              <li>
+                거짓 및 속임수 물품 보고 즉, 무관세로 세관보고 후 관세대상
+                적발되는 경우 (옷/신발 품목만 세관 보고, 음식류적발시)
+              </li>
+              <li>자가사용기준 배제시 (많은갯수,상업성 및 판매 목적 등)</li>
+              <li>반입금지품목 및 배제품목류 포함할경우 등</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-back-next">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="button-box">
+            <button class="back">뒤로가기</button>
+            <!--<button class="next">지금 견적하기</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/mypage/mypage.html"> <img src="images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

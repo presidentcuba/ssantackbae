@@ -1,0 +1,84 @@
+.list-guide {
+  .box-width {
+    .width-default {
+      .list {
+        .item {
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 15px;
+          border: 1px solid #cccccc;
+          .title {
+            color: #223591;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: GmarketSansMedium;
+          }
+          .sub-item {
+            margin-top: 25px;
+            padding: 0 0 0 20px;
+            .sub-title {
+              font-size: 18px;
+              color: #333333;
+              font-weight: 550;
+              margin-bottom: 10px;
+            }
+            .des {
+              color: #666666;
+              font-size: 16px;
+              line-height: 1.8;
+              span {
+                color: red;
+              }
+              p {
+                margin-bottom: 0;
+              }
+              img {
+                margin: 10px 0px;
+              }
+              ul {
+                padding: 0;
+                margin: 0;
+                li {
+                  padding: 0;
+                  margin: 0;
+                  // list-style: none;
+                }
+              }
+            }
+            .link-to {
+              display: inline-block;
+              padding: 3px 7px;
+              background-color: #223591;
+              border-radius: 15px;
+              color: #fff;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      .content {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .des {
+          color: #666666;
+          font-size: 16px;
+          line-height: 1.8;
+          margin-bottom: 30px;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          margin-left: 17px;
+          li {
+            padding: 0;
+            margin: 0;
+
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}

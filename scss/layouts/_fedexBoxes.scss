@@ -1,0 +1,102 @@
+.fedex-boxes {
+  .box-width {
+    .width-default {
+      .fedex-content {
+        .tab {
+          border-radius: 15px;
+          border: 1px solid #cccccc;
+          display: flex;
+          margin: 20px auto;
+          width: 85%;
+
+          .tab-item {
+            flex: 1;
+            padding: 5px 30px;
+            border-radius: 15px;
+            font-size: 16px;
+            text-align: center;
+            &.active {
+              background-color: #223591;
+              color: #fff;
+            }
+          }
+        }
+        .content-tab {
+          .box-item {
+            padding: 20px 10px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            margin: 10px 0px;
+            .thread {
+              color: #223591;
+              font-size: 20px;
+              text-align: center;
+            }
+            .size {
+              text-align: center;
+            }
+            .image {
+              display: flex;
+              margin: 5px auto;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              img {
+                margin: 0px 5px;
+
+                width: 50%;
+              }
+            }
+            .info {
+              .item {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px 0px;
+                font-weight: 550;
+                span {
+                  color: #000;
+                  font-weight: 550;
+                  display: block;
+                  &:nth-child(1) {
+                    color: #9a9b9e;
+                    font-weight: 400;
+                  }
+                }
+              }
+              .item-two {
+                padding-top: 12px;
+                border-top: 1px solid #cccccc;
+              }
+              .item-three {
+                padding-top: 12px;
+                border-top: 1px solid #cccccc;
+              }
+            }
+          }
+        }
+        .content-tab-one {
+          display: none;
+        }
+        .content-tab-two {
+          display: none;
+        }
+        .show {
+          display: block !important;
+        }
+        .button {
+          margin-top: 40px;
+          a {
+            display: block;
+            padding: 10px;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #223591;
+            color: #223591;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}

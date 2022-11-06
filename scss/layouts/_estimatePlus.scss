@@ -1,0 +1,181 @@
+.estimate-plus {
+  margin-top: 85px;
+  padding: 60px 0px;
+  .form-content {
+    margin-top: 20px;
+    .box-width {
+      border: 1px solid #cdcdcd;
+      border-radius: 10px;
+      padding: 30px 0px;
+      .where {
+        margin-bottom: 40px;
+        .title {
+          font-size: 20px;
+          color: #223591;
+          margin-bottom: 25px;
+        }
+        .form-item {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          label {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          input {
+            width: 100%;
+            border: 1px solid #cccccc;
+            padding: 12px 15px;
+            border-radius: 5px;
+            &:focus-visible {
+              outline: unset;
+            }
+            &::placeholder {
+              color: #cccccc;
+            }
+          }
+        }
+      }
+      .purpose {
+        margin-bottom: 40px;
+        .title {
+          font-size: 20px;
+          color: #223591;
+          margin-bottom: 7px;
+        }
+        .des {
+          color: #707070;
+          font-size: 16px;
+        }
+        .form-item {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          label {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          select {
+            width: 100%;
+            border: 1px solid #cccccc;
+            padding: 12px 15px;
+            border-radius: 5px;
+            &:focus-visible {
+              outline: unset;
+            }
+            &::placeholder {
+              color: #cccccc;
+            }
+          }
+        }
+      }
+      .weight {
+        .title {
+          font-size: 20px;
+          color: #223591;
+          margin-bottom: 7px;
+        }
+        .des {
+          color: #707070;
+          font-size: 16px;
+        }
+        .list-item {
+          .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 12px;
+            margin: 10px 0px;
+            cursor: pointer;
+            .image {
+              flex: 1;
+            }
+            .thread {
+              flex: 1;
+              p {
+                display: flex;
+                margin: 0;
+                &:nth-child(1) {
+                  color: #000;
+                  font-weight: 550;
+                  font-size: 20px;
+                  margin-bottom: 10px;
+                }
+                span {
+                  display: block;
+                  color: #333333;
+                  &:nth-child(1) {
+                    margin-right: 15px;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+          .item-active {
+            background-color: #ffcd00;
+          }
+        }
+      }
+      .shipping-date {
+        margin-top: 30px;
+        .box {
+          .title {
+            font-size: 20px;
+            color: #223591;
+            margin-bottom: 7px;
+          }
+          .des {
+            color: #707070;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          .form-date {
+            input {
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+              &::-webkit-calendar-picker-indicator {
+                width: 100%;
+                padding: 11px 0px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding-left: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive("extra-large") {
+  .estimate-plus {
+    padding: 0px 15px;
+  }
+}
+@include responsive("small") {
+  .estimate-plus {
+    .form-content {
+      .box-width {
+        .weight {
+          .input-number {
+            display: flex;
+            flex-direction: column;
+            .item {
+              flex: 1;
+              margin-bottom: 20px;
+              .content {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

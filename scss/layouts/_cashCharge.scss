@@ -1,0 +1,114 @@
+.cash-charge {
+  margin-top: 20px;
+  .box-width {
+    .width-default {
+      .select-price {
+        padding: 25px 20px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        .title {
+          color: #333333;
+          margin-bottom: 10px;
+        }
+        .value {
+          font-size: 20px;
+          border-bottom: 3px solid #ffb300;
+        }
+        .list-price {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          .price {
+            padding: 7px 15px;
+            background-color: #eeeeee;
+            border-radius: 3px;
+            color: #333333;
+            &:hover {
+              background-color: #223591;
+              color: #fff;
+            }
+          }
+        }
+        .pre-pay {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          span {
+            &:nth-child(2) {
+              color: #df0011;
+              font-weight: 550;
+            }
+          }
+        }
+        .next-pay {
+          display: flex;
+          justify-content: space-between;
+          span {
+            color: #333333;
+          }
+        }
+      }
+      .method {
+        padding: 25px 20px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        margin-top: 10px;
+        .title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          a {
+            color: #4079ff;
+            text-decoration: underline;
+          }
+        }
+        .card-atm {
+          display: flex;
+          align-items: center;
+          .thread {
+            margin-left: 10px;
+            span {
+              font-weight: 400;
+              color: #333333;
+              display: block;
+              &:nth-child(1) {
+                font-weight: 550;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        .card-select {
+          label {
+            display: block;
+          }
+          select {
+            margin-top: 5px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            color: #9a9b9e;
+          }
+        }
+      }
+      .total {
+        padding: 25px 20px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: #eeeeee;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        span {
+          &:nth-child(2) {
+            color: #df0011;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

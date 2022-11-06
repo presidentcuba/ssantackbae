@@ -1,0 +1,129 @@
+.list-option {
+  background-color: #f5f8fa;
+  padding: 15px 0px;
+  margin: 15px 0px;
+  .box-width {
+    .width-default {
+      .box {
+        .title {
+          display: flex;
+          margin-bottom: 20px;
+          span {
+            color: #333333;
+            margin-left: 7px;
+          }
+        }
+        .item {
+          display: flex;
+          flex-wrap: wrap;
+          a {
+            padding: 3px 10px;
+            background-color: #fff;
+            border-radius: 15px;
+            border: 1px solid #cccccc;
+            color: #333333;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.status-active {
+  padding: 30px 0px;
+  .box-width {
+    .width-default {
+      .status {
+        display: flex;
+        height: 100%;
+
+        .list-status {
+          position: relative;
+          padding-left: 30px;
+          width: 100%;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            height: 100%;
+            width: 5px;
+            background-color: #9a9b9e;
+          }
+          .item-time {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              left: -35px;
+              top: 0;
+              display: block;
+              height: 15px;
+              width: 15px;
+              border-radius: 50%;
+              background-color: #9a9b9e;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .left {
+              span {
+                font-size: 16px;
+                color: #9a9b9e;
+                display: block;
+                &:nth-child(1) {
+                  font-weight: 600;
+                }
+              }
+            }
+            .right {
+              text-align: right;
+              span {
+                font-size: 16px;
+                color: #9a9b9e;
+                display: block;
+                &:nth-child(1) {
+                  font-weight: 600;
+                }
+              }
+            }
+            &.active {
+              display: flex !important;
+              &::after {
+                background-color: red;
+              }
+              .left {
+                span {
+                  font-size: 16px;
+                  color: #9a9b9e;
+                  display: block;
+                  &:nth-child(1) {
+                    font-weight: 600;
+                    color: #000;
+                  }
+                }
+              }
+              .right {
+                text-align: right;
+                span {
+                  font-size: 16px;
+                  color: #9a9b9e;
+                  display: block;
+                  &:nth-child(1) {
+                    font-weight: 400;
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

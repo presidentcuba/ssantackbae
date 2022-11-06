@@ -1,0 +1,22 @@
+.pay-method-add {
+  margin-top: 20px;
+  .box-width {
+    .width-default {
+      .list-item-add {
+        .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          border-radius: 7px;
+          border: 1px solid #cccccc;
+          margin: 10px 0px;
+
+          .right {
+            font-size: 20px;
+            color: #4079ff;
+          }
+        }
+      }
+    }
+  }
+}

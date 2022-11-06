@@ -1,0 +1,78 @@
+.cancel-result {
+  margin-top: 95px;
+  .width-default {
+    .title-page {
+      font-family: GmarketSansMedium;
+      text-align: center;
+      .title {
+        font-size: 30px;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      .des {
+        font-size: 16px;
+        color: #9a9b9e;
+      }
+    }
+  }
+  .box-name-cancel {
+    margin: 20px 0px;
+
+    .box-width {
+      text-align: center;
+      .width-default {
+        .box {
+          padding: 30px 20px;
+          background-color: #223591;
+          border-radius: 6px;
+          .name {
+            font-size: 16px;
+            color: #fff;
+          }
+          .value {
+            color: #ffcd00;
+            font-size: 30px;
+            font-weight: 550;
+          }
+        }
+      }
+    }
+  }
+}
+.cancel-item {
+  margin-bottom: 40px;
+  .width-default {
+    .content {
+      border: 1px solid #cccccc;
+      padding: 20px;
+      border-radius: 10px;
+      .content-body {
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #cccccc;
+        .left {
+          margin-right: 10px;
+          span {
+            display: block;
+            padding: 0px 20px;
+            border: 1px solid #9a9b9e;
+            border-radius: 15px;
+            color: #9a9b9e;
+          }
+        }
+        .right {
+        }
+      }
+      .content-bot {
+        padding-top: 20px;
+        h3 {
+          margin-bottom: 5px;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

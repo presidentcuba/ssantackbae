@@ -1,0 +1,176 @@
+.pick-slide {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 7px 0px;
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 100%;
+
+  .pick-box {
+    position: relative;
+    width: 350px;
+    top: 50px;
+    margin: 0 auto;
+    .width-default {
+      .name {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 5px;
+        .text {
+          display: flex;
+          align-items: center;
+          color: #fff;
+          span {
+            margin-left: 5px;
+          }
+        }
+        .icon-close {
+          cursor: pointer;
+          a {
+            i {
+              color: #fff;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+      .list-item {
+        .item {
+          position: relative;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          // height: calc(100% - 165px);
+          overflow: hidden;
+          height: 500px;
+          .thread {
+            padding: 7px 15px;
+            background-color: #5e8eff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            span {
+              color: #fff;
+              font-size: 14px;
+              display: block;
+              &:nth-child(1) {
+                font-size: 20px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+          .image {
+            display: block;
+            width: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .link {
+            position: absolute;
+            bottom: 45%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            a {
+              display: inline-block;
+              padding: 3px 15px;
+              background-color: #223591;
+              color: #fff;
+              border-radius: 3px;
+            }
+          }
+        }
+        .owl-nav {
+          .owl-prev {
+            position: absolute;
+            top: 40%;
+            left: 20px;
+            background-color: unset !important;
+            outline: unset !important;
+            border: unset !important;
+            &:focus-visible {
+              background-color: unset !important;
+              outline: unset !important;
+              border: unset !important;
+              color: black;
+            }
+            span {
+              font-size: 60px;
+            }
+          }
+          .owl-next {
+            position: absolute;
+            top: 40%;
+            right: 20px;
+            background-color: unset !important;
+            outline: unset !important;
+            border: unset !important;
+            &:focus-visible {
+              background-color: unset !important;
+              outline: unset !important;
+              border: unset !important;
+              color: black;
+            }
+            span {
+              font-size: 60px;
+            }
+          }
+        }
+        .owl-dots {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          position: absolute;
+          bottom: 45px;
+          .owl-dot {
+            &.active {
+              span {
+                background-color: #223591;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pick-map {
+    max-width: 620px !important;
+    width: 100%;
+    .width-default {
+      .list-item {
+        height: 100%;
+      }
+    }
+  }
+}
+@include responsive("medium") {
+  .pick-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 7px 0px;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+    .pick-box {
+      position: relative;
+      width: 100%;
+      top: 0 !important;
+      .width-default {
+        .list-item {
+          .item {
+            position: relative;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

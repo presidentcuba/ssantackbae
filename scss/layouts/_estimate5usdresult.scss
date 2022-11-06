@@ -1,0 +1,606 @@
+.owl-carousel-s {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.thread-estimate {
+  background-color: #fff !important;
+  span {
+    color: #333333 !important;
+    &:nth-child(1) {
+      color: #333333;
+      font-weight: 550 !important;
+    }
+  }
+}
+.estimate-result {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 0px 10px;
+  .item-info {
+    margin-top: 30px;
+    .box-width {
+      background-color: #223591;
+      border-radius: 10px;
+      padding: 40px 0px;
+      .info-container {
+        .item {
+          display: flex;
+          justify-content: space-between;
+          .price {
+            font-size: 30px;
+            color: #ffcd00;
+            margin-bottom: 15px;
+          }
+          span {
+            display: block;
+            color: #fff;
+          }
+          a {
+            display: block;
+            padding: 3px 10px;
+            color: #fff;
+            border-radius: 15px;
+            border: 1px solid #fff;
+          }
+          &:nth-child(3) {
+            padding-top: 15px;
+          }
+          &:last-child {
+            padding-top: 10px;
+            margin-top: 10px;
+            border-top: 1px solid #fff;
+          }
+        }
+      }
+      .des {
+        display: flex;
+        span {
+          display: block;
+          color: #fff;
+          font-size: 16px;
+        }
+        .text-des {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .item-branch {
+    margin-top: 30px;
+    .box-width {
+      .text-title {
+        padding: 20px 0px;
+        span {
+          display: block;
+          &:nth-child(1) {
+            font-size: 20px !important;
+            color: #223591 !important;
+            font-family: GmarketSansMedium;
+          }
+          &:nth-child(2) {
+            font-size: 16px !important;
+            color: #707070 !important;
+          }
+        }
+      }
+      .branch-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+
+        .content {
+          .item {
+            padding: 20px 0px;
+            .item-box {
+              display: flex;
+              justify-content: space-between;
+              .left {
+                > span {
+                  color: #707070;
+                  display: block;
+                  font-weight: 400;
+                }
+                .name {
+                  color: #707070;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+              .right {
+                a {
+                  text-decoration: underline;
+                  font-size: 15px;
+                  color: #5e8eff;
+                }
+              }
+            }
+            &:nth-child(1) {
+              border-bottom: 1px solid #cccccc;
+            }
+            &:nth-child(2) {
+              border-bottom: 1px solid #cccccc;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .item-register {
+    margin-top: 30px;
+    .box-width {
+      .text-title {
+        padding: 20px 0px;
+        span {
+          display: block;
+          &:nth-child(1) {
+            font-size: 30px;
+            font-family: GmarketSansMedium;
+            color: #000;
+          }
+          &:nth-child(2) {
+            font-size: 16px;
+            color: #707070;
+          }
+        }
+      }
+      .register-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        margin: 10px 0px !important;
+        .content {
+          .item {
+            padding: 20px 0px;
+            .item-box {
+              > span {
+                color: #707070;
+                display: block;
+                font-weight: 400;
+              }
+              .name {
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-register {
+    padding: 20px 0px;
+    .register-container {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+
+      .content {
+        .register-discount {
+          padding: 20px 0px;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            display: flex;
+            font-family: GmarketSansMedium;
+            p {
+              font-weight: 400 !important;
+              margin-left: 5px;
+              span {
+                color: #5e8eff;
+              }
+            }
+          }
+          .form-item {
+            display: flex;
+            width: 100%;
+            .form-input {
+              width: 90%;
+              font-family: GmarketSansMedium;
+              input {
+                width: 100%;
+                border: 1px solid #cccccc;
+                background-color: #fff;
+                padding: 10px 5px;
+                outline: unset;
+                &:focus-visible {
+                  outline: unset;
+                }
+              }
+            }
+            button {
+              width: 35%;
+              background-color: #fff;
+              border: 1px solid #cccccc;
+              outline: unset;
+              margin-left: 10px;
+              font-family: GmarketSansMedium;
+              &:focus {
+                outline: unset;
+              }
+            }
+            .form-checkbox {
+              width: 35%;
+              margin-left: 10px;
+              display: flex;
+              align-items: center;
+              .name {
+                margin: 0;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .register-paypal {
+          padding: 30px 0px;
+          border-bottom: 1px solid #eeeeee;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            font-family: GmarketSansMedium;
+          }
+          .form-item {
+            .form-checkbox {
+              display: flex;
+              align-items: center;
+              padding: 5px 0px;
+              .des {
+                width: 100%;
+                color: #707070;
+                font-size: 16px;
+                margin-left: 25px;
+              }
+              .name {
+                width: 30%;
+                margin-left: 25px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .slide-card {
+          padding: 15px;
+          .title {
+            display: flex;
+            font-family: GmarketSansMedium;
+            justify-content: space-between;
+            a {
+              text-decoration: underline;
+              font-family: unset !important;
+            }
+          }
+          .slide {
+            margin: 20px 0px;
+            &.owl-carousel-one {
+              position: relative;
+              display: none;
+              width: 100%;
+              z-index: 1;
+            }
+            .item {
+              border-radius: 10px;
+              height: 200px;
+              padding: 10px;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              .name {
+                display: block;
+                width: 15%;
+                font-weight: 550;
+                padding: 2px 4px;
+                background-color: #eaebf0;
+                border-radius: 15px;
+              }
+            }
+            .item-one {
+              background-color: #17c2ff;
+            }
+            .item-two {
+              background-color: #ffb300;
+            }
+          }
+          .des {
+            text-align: center;
+          }
+        }
+        .register-tax {
+          padding: 30px 0px;
+          border-bottom: 1px solid #eeeeee;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            font-family: GmarketSansMedium;
+          }
+          .form-item {
+            .form-checkbox {
+              display: flex;
+              align-items: center;
+              padding: 5px 0px;
+              .name {
+                margin-left: 10px;
+                color: #707070;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .register-total {
+          padding: 30px 0px;
+          label {
+            font-size: 20px;
+            color: #223591;
+            font-family: GmarketSansMedium;
+            font-weight: 700;
+          }
+          .total-content {
+            .item {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 7px;
+              .des {
+                font-size: 16px;
+                color: #707070;
+              }
+
+              &:last-child {
+                padding-top: 14px;
+                border-top: 2px solid #cdcdcd;
+                .number {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #ffb300;
+                }
+                .des {
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #000;
+                }
+              }
+            }
+            .item-active {
+              .number {
+                font-size: 16px;
+                color: #5e8eff;
+              }
+            }
+          }
+          .total-box {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+  .item-des-one {
+    .box-width {
+      padding: 20px 0px;
+      background-color: #f5f8fa !important;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        .number {
+          color: #000;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+}
+.item-des-s {
+  padding: 20px 0px !important;
+  background-color: #eeeeee !important;
+  .text {
+    span {
+      display: block !important;
+      margin-bottom: 10px;
+    }
+  }
+}
+.item-des-list {
+  background-color: #eeeeee;
+  padding: 20px 0px;
+  .box-width {
+    .width-default {
+      .text-list {
+        span {
+          display: block;
+          font-size: 15px;
+          color: #000;
+          &:nth-child(1) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.total-number-s {
+  .box-width {
+    background-color: #f5f8fa !important;
+    border-radius: 10px;
+    padding: 20px 0px;
+    .width-default {
+      .box {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+.item-des {
+  .box-width {
+    padding: 20px 0px;
+    // background-color: #cccccc;
+    .text {
+      // display: flex;
+      // justify-content: space-between;
+      .number {
+        font-weight: 550;
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.item-des-fedex {
+  .box-width {
+    padding: 20px 0px;
+    background-color: #f5f8fa;
+    border-radius: 10px;
+    .text {
+      display: flex;
+      justify-content: space-between;
+      .number {
+        font-weight: 550;
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.item-shipping {
+  padding: 20px 0px;
+  .width-default {
+    .text {
+      font-size: 16px;
+      color: #000;
+      font-weight: 600;
+    }
+    .des {
+      font-size: 15px;
+    }
+  }
+}
+.bar-under {
+  display: none;
+  height: 5px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.box-width {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+  // padding: 0px 15px;
+}
+.button-back-next {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  cursor: pointer;
+  .button-box {
+    display: flex;
+    justify-content: center !important;
+    a {
+      width: 45%;
+      margin: 0px 5px !important;
+      .back {
+        width: 100%;
+        border: 1px solid #223591;
+        background-color: #fff !important;
+        color: #223591;
+        padding: 7px 25px;
+        border-radius: 3px;
+        margin: 0px 5px !important;
+        i {
+          font-size: 20px;
+          color: #223591;
+        }
+        &:focus {
+          outline: unset;
+        }
+      }
+      .next {
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #223591;
+        background-color: #223591;
+        padding: 7px 25px;
+        color: #fff;
+        font-size: 16px;
+        margin-left: 0;
+
+        &:focus {
+          outline: unset;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .bar-under {
+    display: block !important;
+  }
+  .estimate-result {
+    .form-register {
+      padding: 20px 0px;
+      .register-container {
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+
+        .content {
+          .slide-card {
+            padding: 15px;
+            .title {
+              display: flex;
+              font-family: GmarketSansMedium;
+              justify-content: space-between;
+              a {
+                text-decoration: underline;
+                font-family: unset !important;
+              }
+            }
+            .slide {
+              margin: 20px 0px;
+              &.owl-carousel-one {
+                position: relative;
+                display: none;
+                width: 100%;
+                z-index: 1;
+              }
+              .item {
+                border-radius: 10px;
+                height: 120px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .name {
+                  display: block;
+                  width: 50%;
+                  font-weight: 550;
+                  padding: 2px 4px;
+                  background-color: #eaebf0;
+                  border-radius: 15px;
+                }
+              }
+              .item-one {
+                background-color: #17c2ff;
+              }
+              .item-two {
+                background-color: #ffb300;
+              }
+            }
+            .des {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

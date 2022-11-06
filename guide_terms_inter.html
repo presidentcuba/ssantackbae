@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="scss/owl.theme.default.min.css" />
+
+    <title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="../images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배</span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="../index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/order_list.html" alt="">
+                  <img src="../images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/pay_method.html" alt="">
+                  <img src="../images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/mycoupon.html" alt="">
+                  <img src="../images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cancel.html" alt="">
+                  <img src="../images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/qna.html" alt="">
+                  <img src="../images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/faq.html" alt="">
+                  <img src="../images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cs.html" alt="">
+                  <img src="../images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-pay">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="box-item">
+            <div class="item-info">
+              <div class="left">
+                <div class="icon" onclick="goBack()">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="des" style="display: flex;">
+                  <p>
+                    <strong class="title_b">국제특송 운송약관</strong>
+                  </p>
+                   <p> / <a style="font-size: " href="/guide_terms_delivery.html"> 택배 운송약관</a></p>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-notice">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="list">
+            <div class="item">                
+                <div class="sub-item">
+                  <div class="sub-title">1. 운송장 및 송하인의 의무</div>
+                  <div class="des">
+                      <p>
+                          송하인은 송하인이 아래에 나열된 의무, 법률 등을 준수하지 않아 발생한 모든 손해나 손상에 대하여 전적으로 송하인이 책임지며, 싼택배를 면책하고 싼택배에 보상합니다.<br>
+                          가. 송하인(고객)은 운송장의 각 항을 정확히 기재하여야 합니다.<br>
+                          &emsp; ① 송하인의 주소, 이름 또는 상호, 전화번호, 이메일<br>
+                          &emsp; ② 수하인의 주소, 이름 또는 상호, 전화번호, 이메일<br>
+                          &emsp; ③ 운송물의 품명, 수량, 물품 가격, 무게, 부피, 패킹사진, 영수증 사진, Drop off 사진<br>
+                          &emsp; ④ 운송상의 특별한 주의 사항<br>
+                          
+                          나. 송하인이 구두 또는 서면으로 제공한 모든 정보는 정확하고 완전한 것으로 간주합니다.<br>
+                          다. 운송물이 제4조에 따른 취급불가한 물건이 아니어야 하며, 송하인은 운송물을 그 성질, 중량, 용적 등에 따라 운송에 적합하도록 포장하여야 합니다.<br>
+                          라. 송하인은 세관 통관을 위하여 요구하는 문서를 제공하여야 합니다.<br>
+                          마. 송하인은 관련된 모든 세관, 수입, 수출, 정보 보호 법률, 제재, 금수조치 및 기타 관련 법규정을 준수하여야 합니다.<br>
+                          바. 송하인은 수하인 정보를 비롯한 운송, 통관 및 배송을 위하여 필요한 개인 정보(이메일 주소 및 핸드폰 번호 등을 포함함)를 싼택배에 제공함과 관련하여 필요한 모든 동의를 획득하였습니다.
+                      </p>
+                </div>
+                    <br>
+                  <div class="sub-title">2. 운임의 청구와 유치권</div>
+                  <div class="des"> 
+                    <p>
+                        가. 국제특송 운임은 실제중량과 부피중량 중 큰 것으로 계산 청구되며 정확한 요금 계산을 위해 재계측을 할 수 있습니다.<br>
+                        
+                        나. 운송 과정에서 수하인 또는 다른 당사자에게 부과되는 운임, 창고료, 관세, 세금 등을 수하인 또는 다른 당사자가 지불하지 않을 경우, 송하인이 모든 요금을 지불해야 합니다.<br>
+                        
+                        다. 수하인의 수취거절, 관부가세 납부거절, 운송화물의 통관불가 품목판정 등 수하인 사유로 인해 초래되는 화물의 반송, 폐기, 보관 등에 추가로 발생되는 제반 요금도 송하인에게 청구할 수 있습니다.<br>
+                        
+                        라. 싼택배는 위탁받은 화물에 대한 운임, 창고료, 관세, 세금, 벌과금 또는 기타 제반 요금이 지불될 때까지 화물을 유치하거나 인도를 거절할 수 있습니다.<br>
+                        
+                        바. 운임 및 할증 요금은 미리 이 약관의 별표로 제시하고 운송장에 기재합니다.
+                      </p>
+                 </div>
+                    <br>
+                 <div class="sub-title">3. 운송물의 확인</div>
+                  <div class="des">
+                      싼택배는 화물을 개봉할 의무는 없으나, 필요시 송하인에게 사전 통보 없이 개봉 및 검사를 할 수 있는 권한을 가집니다.
+                 </div>
+                    <br>
+                    
+                  <div class="sub-title">4. 취급 품목 및 서비스의 제한</div>
+                  <div class="des">
+                      <span style="color:red;">################################<br></span>
+                      싼택배는 다음의 경우에 운송물의 운송을 거절할 수 있습니다.<br>
+                      &emsp; ① 운송물 한 박스의 가격이 300만원 또는 $2,500을 초과하는 경우<br>
+                      &emsp; ② 운송물 한 박스의 무게가 40LB를 초과하는 경우<br>
+                      &emsp; ③ 운송물 한 박스의 크기가 가로 세로 높이 세변의 합 55인치를 초과하거나, 최장변이 30인치를 초과하는 경우<br>
+                      &emsp; ④ 운송에 적합한 포장이 되지 않은 경우<br>
+                      &emsp; ⑤ 부패하기 쉬운 운송물, 보온보냉이 필요한 운송물<br>
+                      &emsp; ⑥ 재생 불가능한 계약서, 원고, 서류 등인 경우<br>
+                      &emsp; ⑦ 살아있는 동물, 사체, 현금, 카드, 어음, 수표, 유가증권<br>
+                      &emsp; ⑧ 화약총포류, 폭발물, 인화물질 등 위험한 물건인 경우<br>
+                      &emsp; ⑨ 마약류, 불법약물, 위조품, 밀수품 , 군수품 등 위법한 물건인 경우<br>
+                      &emsp; ⑩ 국제항공운송협회, 국제민간항공기구, 관련국 정부, 기타 유관기관에서 규정한 위험물, 금지 또는 제한된 품목<br>
+                      &emsp; ⑪ 송하인이 운송장에 필요한 사항을 기재하지 아니한 경우<br>
+                      &emsp; ⑫ 운송물의 종류와 수량이 운송장에 기재된 것과 다른 경우<br>
+                      &emsp; ⑬ 운송이 법령, 사회질서 기타 선량한 풍속에 반하는 경우<br>
+                      &emsp; ⑭ 운송이 천재지변 기타 불가항력적인 사유로 불가능한 경우
+                 </div>
+            </div>
+                <br>
+                
+                <div class="sub-item">
+                  <div class="sub-title">5. 인도할 수 없는 운송물의 처분</div>
+                  <div class="des">
+                      가. 수하인께 배송이 불가능한 경우, 송하인에게 사실을 통지한 후 반송합니다. 단, 반송은 통관 규정상 허용되는 경우에 한합니다.<br>
+                      나. 송하인이 반송을 거절하거나 또는 송하인에게 반송할 수 없는 경우, 싼택배는 송하인이 선택한 반송처리에 따라 운송물을 처분합니다.<br>
+                      다. 송하인은 운송물의 반송과 처분 과정에서 발생하는 반송 요금, 관세, 세금, 보관료, 폐기료 등 모든 비용을 지불하여야 합니다.
+                    </div>
+                    <br>
+                     <div class="sub-title">6. 손해배상</div>
+                  <div class="des">
+                      가. 운송물의 분실이나 파손에 대한 싼택배의 손해배상 책임은 운송물의 배송일 또는 배송예정일로부터 14일 이내에 송하인이 서면으로 통지 하지 않으면 소멸합니다.<br>
+                      나. 운송물의 분실 또는 파손에 대한 손해배상은 아래에 따릅니다.<br>
+                      다. 송하인은 실제 손해액을 증명할 책임을 집니다.<br>
+                      라. 싼택배는 국제배송에 관한 여러 변경 가능한 사정 중 싼택배의 귀책사유 없이 발생하는 배송 지연에 대해서는 일체의 책임을 부담하지 않습니다. (항공사 스케줄 변경, 오프로드(off-road)등으로 인한 출발 지연, 세관의 검사/검역절차 지연으로 인한 통관지연 등) 싼택배는, 싼택배의 귀책사유로 인하여 부당하게 오래 지연된 경우에만 책임을 집니다.<br>
+                      마. 신고 금액을 초과하는 손실의 위험은 송하인이 부담하는 것으로 합니다. 송하인은 보험에 가입함으로써 당해 위험을 송하인의 선택으로 보험회사에 이전할 수 있습니다. 싼택배는 어떠한 종류의 보험 서비스도 제공하지 않습니다.<br>
+                      바. 싼택배는 운송물의 파손, 지연 등으로 인한 영업손실, 이자, 효용성, 시장성 감소 등 간접 손해에 대해서는 발생가능성의 인지 여부에 관계없이 책임을 지지 않습니다.<br>
+                      사. 본 약관상의 싼택배의 책임 제한 규정은 송하인 또는 수하인이 싼택배에 대하여 채무불이행으로 인한 손해배상 청구하는 경우뿐만 아니라 불법행위로 인한 손해배상 청구의 경우에도 적용됩니다.
+                    </div>
+                    <br>
+                    <div class="sub-title">7. 싼택배의 면책</div>
+                    <div class="des">
+                      싼택배는 다음과 같이 불가항력적인 사유로 인한 운송물의 분실, 파손 또는 지연 배송에 대해서는 손해배상책임을 지지 않습니다.<br>
+                        &emsp; ① 천재지변, 기상조건, 항공기의 연착<br>
+                        &emsp; ② 폭동, 전쟁, 파업, 노동쟁의<br>
+                        &emsp; ③ 화물의 성질, 결함, 특성, 잠재결함<br>
+                        &emsp; ④ 권한을 가진 공공기관(세관, 검역기관 포함)의 행위 또는 이행태만<br>
+                        &emsp; ⑤ 본 운송약관의 위반, 부적절한 포장, 보안검색, 기재사항의 미흡 등 송, 수하인 또는 동 화물과 관련된 제 3자의 행위 또는 이행태만
+                    </div>
+                    
+                    <br>
+                    <div class="sub-title">8. 준거법</div>
+                    <div class="des">
+                      본 약관에 따라 또는 본 약관과 관련하여 발생하는 모든 분쟁은 운송물의 발송지 국가(country of origin)의 법원의 비전속적 관할에 따르며 운송물의 발송지 국가의 법률에 의하여 규율 됩니다.
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-back-next">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="button-box">
+            <button class="back"><i class="far fa-chevron-left"></i></button>
+            <!--<button class="next">지금 견적하기</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/"> <img src="images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

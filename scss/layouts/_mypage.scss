@@ -1,0 +1,142 @@
+.mypage {
+  margin-top: 60px;
+
+  .top-content {
+    background-color: #ffcd00;
+    padding: 30px 10px;
+    .box-width {
+      .box {
+        .title {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            color: #000;
+            font-size: 20px;
+            font-family: GmarketSansMedium;
+            span {
+              color: #fff;
+              font-weight: 600;
+            }
+          }
+          a {
+            color: #000;
+            font-size: 16px;
+            text-decoration: underline;
+          }
+        }
+        .box-content {
+          background-color: #223591;
+          border-radius: 5px;
+          padding: 15px 0px;
+          .width-default {
+            .list-item {
+              display: flex;
+              justify-content: space-between;
+              .item {
+                display: flex;
+
+                .detail {
+                  margin-left: 10px;
+                  span {
+                    display: block;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .body-content {
+    margin-top: 40px;
+    padding: 0px 10px;
+    .title {
+      .name {
+        color: #223591;
+        font-family: GmarketSansMedium;
+        font-size: 20px;
+      }
+    }
+
+    .box-width {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      margin-top: 20px;
+
+      .box-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        .left {
+          .name-box {
+            a {
+              font-family: GmarketSansMedium;
+              color: #223591;
+              font-size: 20px;
+            }
+          }
+          .des {
+            margin-top: 5px;
+            a {
+              display: inline-block;
+              font-size: 13px;
+              padding: 0px 7px;
+              color: #223591;
+              border-radius: 15px;
+              border: 1px solid #223591;
+              margin-right: 10px;
+            }
+            span {
+              color: #9a9b9e;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .mypage-bar {
+      .box-width {
+        border: unset !important;
+        .bar {
+          width: 100%;
+          height: 5px;
+          background-color: #eeeeee;
+        }
+      }
+    }
+    .list-mypage {
+      margin-bottom: 70px;
+      .box-width {
+        border: unset !important;
+        .list {
+          padding: 0;
+          margin: 0;
+          .item {
+            list-style: none;
+            a {
+              padding: 15px 10px;
+              border-bottom: 1px solid #cccccc;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .name {
+                color: #333333;
+              }
+              .detail {
+                i {
+                  color: #333333;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

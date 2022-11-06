@@ -1,0 +1,107 @@
+.cash {
+  margin-top: 20px;
+  .box-width {
+    .width-default {
+      .box-info {
+        padding: 20px 15px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        .title {
+          color: #333333;
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 15px;
+          span {
+            &:nth-child(2) {
+              color: #df0011;
+            }
+          }
+        }
+        .box-item {
+          display: flex;
+          justify-content: center;
+          .item {
+            color: #333333;
+            padding: 10px 25px;
+            text-align: center;
+            background-color: #ffcd00;
+            margin: 0px 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+      .select-item {
+        label {
+          font-weight: 550;
+        }
+        .select {
+          display: flex;
+          justify-content: space-between;
+          select {
+            width: 30%;
+            border: 1px solid #cccccc;
+            background-color: #fff;
+            padding: 10px 5px;
+            outline: unset;
+            border-radius: 3px;
+          }
+        }
+      }
+      .list-item-point {
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        .item {
+          padding: 15px 0px;
+          border-bottom: 1px solid #cccccc;
+          display: flex;
+          justify-content: space-between;
+          &:last-child {
+            border-bottom: unset;
+          }
+          .left {
+            display: flex;
+            align-items: center;
+            span {
+              color: #333333;
+              &:nth-child(1) {
+                padding: 3px 10px;
+                border-radius: 15px;
+                border: 1px solid #cccccc;
+                color: #333333;
+                margin-right: 10px;
+              }
+              &.active {
+                color: #4079ff;
+                border: 1px solid #4079ff;
+              }
+            }
+          }
+          .right {
+            color: #333333;
+            &.active {
+              color: #4079ff;
+            }
+          }
+        }
+      }
+
+      .list-info {
+        margin: 0;
+        padding-left: 17px;
+        margin: 30px 0px;
+        color: #333333;
+        li {
+          line-height: 1.7;
+          margin-bottom: 7px;
+          &:first-child {
+            margin-bottom: 15px;
+            list-style: none;
+            font-weight: 550;
+            margin-left: -15px;
+          }
+        }
+      }
+    }
+  }
+}

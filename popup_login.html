@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="scss/owl.theme.default.min.css" />
+
+    <title>싼ㅡ택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배 </span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>배송조회</button>
+                <button>로 그인</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="index.html" alt=""> 싼ㅡ택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html" alt="">
+                  <img src="images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html" alt="">
+                  <img src="images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="button-all d-none">
+              <button>배송조회</button>
+              <button>로 그인</button>
+            </div>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="box" onclick="openModal('popupLogin', true)">
+      <a class="button">Let me Pop up</a>
+    </div> -->
+    <div id="popupLogin" class="overlay popup-login">
+      <div class="popup">
+        <div class="close" onclick="openModal('popupLogin', false)">
+          <i class="far fa-times"></i>
+        </div>
+        <div class="content">
+          <div class="title">어서오세요!</div>
+          <div class="description">서비스 이용을 위해 로그인이 필요해요.</div>
+          <div class="form-content">
+            <div class="form-item">
+              <label>이메일 ID</label>
+              <input type="text" name="" placeholder="email" />
+            </div>
+
+            <div class="form-item">
+              <label>비밀번호</label>
+              <input type="password" name="" placeholder="비밀번호" />
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" name="" />
+              <label for="">아이디 저장</label>
+            </div>
+            <button type="submit">로그인</button>
+          </div>
+          <div class="text">
+            <span>비밀번호 찾기</span>
+            <span>이메일로 가입하기</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <a class="active" href="/" alt="">
+              <img src="images/home.png" alt="" />
+            </a>
+          </div>
+          <div class="icon notice">
+            <a href="/notice" alt="">
+              <img src="images/noti.png" alt="" />
+              <span class="total-notice">
+                <span>1</span>
+              </span>
+            </a>
+          </div>
+          <div class="icon profile">
+            <a href="/profile" alt="">
+              <img src="images/user.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

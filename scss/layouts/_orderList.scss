@@ -1,0 +1,173 @@
+.list-order-customs {
+  .box-width {
+    .width-default {
+      .list {
+        margin-top: 20px;
+        .item {
+          .time {
+            padding: 0px 15px;
+            font-size: 20px;
+            font-family: GmarketSansMedium;
+            color: #ffb300;
+            margin-bottom: 5px;
+          }
+          .sub-item {
+            padding: 15px 0px;
+            border-radius: 15px;
+            border: 1px solid #cccccc;
+            .title {
+              padding: 0px 15px;
+              padding-bottom: 15px;
+              border-bottom: 1px solid #cccccc;
+              .name {
+                display: flex;
+                justify-content: space-between;
+
+                color: #223591;
+                span {
+                  font-family: GmarketSansMedium;
+                  font-size: 20px;
+                }
+                a {
+                  color: #223591;
+                  text-decoration: underline;
+                }
+              }
+              .des {
+                color: #27ab00;
+                font-size: 20px;
+                font-weight: 550;
+              }
+            }
+            .info-box {
+              padding: 20px 15px;
+              border-radius: 12px;
+              .button {
+                margin-bottom: 20px;
+                a {
+                  display: inline-block;
+                  padding: 3px 7px;
+                  color: #333333;
+                  border-radius: 15px;
+                  background-color: #223591;
+                  border: 1px solid #fff;
+                }
+              }
+              .item {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0px;
+
+                p {
+                  margin-bottom: 0;
+                  color: #333333;
+                  font-weight: 550;
+                  span {
+                    &:last-child {
+                      margin-left: 15px;
+                      font-weight: 550;
+                    }
+                  }
+                  &:first-child {
+                    font-weight: 400;
+                  }
+                }
+              }
+              .item-second {
+                margin-bottom: 30px;
+              }
+            }
+          }
+          .item-opp {
+            margin-top: 20px;
+            .item {
+              display: flex;
+              justify-content: space-between;
+              margin: 0px -10px;
+              a {
+                flex: 1;
+                text-align: center;
+                font-family: GmarketSansMedium;
+                span {
+                  display: block;
+                  padding: 15px 15px;
+                  color: #333333;
+                  border: 1px solid #cccccc;
+                  margin: 10px 10px;
+                }
+              }
+            }
+          }
+          .item-none-border {
+            margin-top: 20px;
+            .item {
+              display: flex;
+              justify-content: space-between;
+              margin: 0;
+              cursor: pointer;
+              a {
+                flex: 1;
+                text-align: center;
+                font-family: GmarketSansMedium;
+                span {
+                  display: block;
+                  padding: 15px 15px;
+                  color: #333333;
+                  border: 1px solid #cccccc;
+                }
+              }
+            }
+          }
+          .letter-list-item-s {
+            margin: 10px 0px;
+            .item {
+              display: flex;
+              margin: 0px -5px;
+              text-align: center;
+
+              font-size: 14px;
+              cursor: pointer;
+              span {
+                flex: 1;
+                display: block;
+                border: 1px solid #cccccc;
+                padding: 15px 0px;
+                color: #000;
+                font-size: 14px;
+                border-radius: 3px;
+                margin: 5px 5px;
+                font-family: GmarketSansMedium;
+              }
+              a {
+                flex: 1;
+                margin: 5px;
+                font-family: GmarketSansMedium;
+                span {
+                  margin: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.button-back-next {
+  cursor: pointer;
+  .button-box {
+    .next {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #223591;
+      background-color: #223591;
+      padding: 7px 25px;
+      color: #fff;
+      font-size: 16px;
+
+      &:focus {
+        outline: unset;
+      }
+    }
+  }
+}

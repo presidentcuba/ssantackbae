@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="scss/owl.theme.default.min.css" />
+
+    <title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배 </span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html" alt="">
+                  <img src="images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html" alt="">
+                  <img src="images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html" alt="">
+                  <img src="images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="job.html" alt="">
+                  <img src="images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-pay">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="box-item">
+            <div class="item-info">
+              <div class="left">
+                <div class="icon" onclick="goBack()">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="des">
+                  <p>
+                    <strong class="title_b">포장안내</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-packing">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="list">
+            <div class="item">
+              <div class="title">통관 불가 물품</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  <ul>
+                    <li>
+                      모든 택배는 물품을 보호할 수 있도록 포장되 어야 하며
+                      박스포장 필수입니다.
+                    </li>
+                    <li>
+                      포장불량으로 인한 분실 및 파손 발생시 보 상되지 않습니다.
+                    </li>
+
+                    <li>
+                      전자제품, 깨지는 유리, 도자기, 플라스틱 등 은 파손발생시
+                      면책대상 물품입니다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="title">전자제품, 깨지는 물품 포장</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  파손발생시 면책대상 물품이므로 안전한 패킹 이 필요합니다.
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-title">BOX-IN-BOX 포장</div>
+                <div class="des">아래 페덱스 패킹가이드를 참고하세요.</div>
+                <img src="images/packing_01.png" />
+                <img src="images/packing_02.png" />
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title">공장출하시 박스 포장</div>
+                <div class="des">공장출하시 박스를 사용하여 포장합니 다.</div>
+                <img src="images/packing_03.png" />
+                <img src="images/packing_04.png" />
+              </div>
+
+              <div class="sub-item">
+                <div class="sub-title">페덱스 유료포장 또는 포장용품 구매</div>
+                <div class="des">
+                  페덱스에서 유료 패킹서비스를 받거나 안전 포장용품을 구매할 수
+                  있습니 다.
+                </div>
+                <img src="images/packing_05.png" />
+                <img src="images/packing_06.png" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="title">포장완료 후</div>
+              <div class="sub-item">
+                <div class="sub-title"></div>
+                <div class="des">
+                  포장된 택배박스 겉면에 주문번호와 보내시는 분의 이름을 쓰고
+                  택배박스 전체 사진을 찍습니 다. 사진은 통관정보에 등록합니다.
+                </div>
+                <img src="images/packing_07.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-back-next">
+      <div class="box-width">
+        <div class="width-default">
+          <div class="button-box">
+            <button class="back">뒤로가기</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/"> <img src="images/user.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

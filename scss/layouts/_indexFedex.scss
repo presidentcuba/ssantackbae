@@ -1,0 +1,42 @@
+.common-fedex {
+  display: block !important;
+  &.intro-pick {
+    padding: 0 !important;
+    margin-top: 60px !important;
+  }
+  &.section-info {
+    padding: 0 !important;
+    margin-top: 60px !important;
+  }
+  &.content-text {
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffb300;
+      color: #000;
+      border-radius: 3px;
+    }
+  }
+}
+
+.btn-show-popup {
+  .link-to-estimate {
+    background-color: #4f2eb1;
+  }
+}
+
+.btn-link-to {
+  position: absolute;
+  bottom: 45%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .btn-link-page-estimatefedex {
+    padding: 3px 15px;
+    background-color: #ffb300;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #000;
+  }
+}

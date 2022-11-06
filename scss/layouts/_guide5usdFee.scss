@@ -1,0 +1,39 @@
+.guide_5usd_fee {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  .box-width {
+    .width-default {
+      .fee-box {
+        table {
+          border: 1px solid #cccccc !important;
+          thead {
+            tr {
+              th {
+                text-align: center;
+                padding: 5px 0px;
+                background-color: #eff8ff;
+                width: 20%;
+                &:first-child {
+                  width: 10%;
+                }
+                &:last-child {
+                  background-color: #feebeb;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding: 5px 0px;
+                text-align: center;
+                border: unset !important;
+                border-right: 1px solid #cccccc !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.title-complete {
+  margin-top: 85px;
+  font-size: 30px;
+  text-align: center;
+}
+.cash-complete {
+  margin: 20px 0px;
+  .box-width {
+    .width-default {
+      .box-price {
+        background-color: #223591;
+        padding: 25px 0px;
+        text-align: center;
+        border-radius: 10px;
+        .title {
+          color: #fff;
+          font-size: 16px;
+          margin-bottom: 7px;
+        }
+        .price {
+          font-size: 30px;
+          color: #ffcd00;
+        }
+      }
+      .info-price {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 7px 0px;
+          border-bottom: 1px solid #cccccc;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+.popup-login {
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  right: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  &.popup-complete {
+    background: rgba(0, 0, 0, 0.99);
+    .popup {
+      position: relative;
+      top: 100px;
+    }
+  }
+  &.popup-pass {
+    background: rgba(0, 0, 0, 0.99);
+    .popup {
+      position: relative;
+      top: 100px;
+    }
+  }
+  &.active-modal {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+  .popup {
+    margin: 40px auto;
+    padding: 7px 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 350px;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+    .close {
+      position: absolute;
+      top: -30px;
+      right: -5px;
+      transition: all 200ms;
+
+      z-index: 10000;
+      i {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+
+    .content-login {
+      overflow-y: scroll;
+      height: calc(100vh - 92px) !important;
+    }
+    .content {
+      overflow-y: scroll;
+      height: calc(100vh - 452px);
+      &::-webkit-scrollbar {
+        width: 0px;
+        background-color: #cccccc;
+      }
+      .text-alert {
+        font-size: 30px;
+        color: #223591;
+
+        text-align: center;
+        font-weight: 700;
+      }
+      .title {
+        font-size: 20px;
+        color: #223591;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      > button {
+        width: 80%;
+        outline: unset;
+        border: 1px solid #223591;
+        background-color: #fff;
+        color: #223591;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px 0px;
+        border-radius: 3px;
+      }
+      .description {
+        font-size: 16px;
+        color: #9a9b9e;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .form-content {
+        .form-item {
+          margin-bottom: 15px;
+          label {
+            display: block;
+            font-weight: 550;
+            margin-bottom: 10px;
+          }
+          input {
+            padding: 10px;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #9a9b9e;
+            border-radius: 3px;
+            &:focus-visible {
+              outline: unset;
+              border: 1px solid #223591;
+            }
+          }
+        }
+        .form-checkbox {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: flex-start;
+          label {
+            margin-left: 10px;
+          }
+          input {
+            margin-top: 7px;
+          }
+        }
+        .text-red {
+          color: #707070;
+          font-size: 16px;
+          span {
+            color: red;
+          }
+        }
+        button {
+          width: 100%;
+          border: 1px solid #223591;
+          background-color: #223591;
+          color: #fff;
+          padding: 10px;
+          border-radius: 3px;
+        }
+        .complete {
+          background-color: #fff;
+          color: #223591;
+        }
+        .button-back-next {
+          cursor: pointer;
+          display: flex;
+          .back {
+            width: 20%;
+            padding: 10px;
+            border: 1px solid #223591;
+            color: #223591;
+            background-color: #fff;
+            border-radius: 3px;
+          }
+          .next {
+            padding: 10px;
+            border: 1px solid #223591;
+            color: #fff;
+            background-color: #223591;
+            border-radius: 3px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .text {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          display: block;
+          padding: 0px 10px;
+          &:nth-child(1) {
+            border-right: 1px solid #9a9b9e;
+          }
+        }
+      }
+    }
+    .popup-complete {
+      height: 150px;
+    }
+    .popup-pasword {
+      height: 320px;
+    }
+  }
+  .popup-price {
+    .content {
+      height: 100%;
+      .description {
+        padding-top: 10px;
+        margin-bottom: 15px;
+      }
+      .price {
+        background-color: #eeeeee;
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .item-active {
+          color: red;
+        }
+        .key {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 20px;
+          background-color: #fff;
+        }
+      }
+      .list-input {
+        margin: 15px 0px;
+        .checkbox {
+          display: flex;
+          padding: 20px 0px;
+          border-bottom: 1px solid #cccccc;
+          .info {
+            margin-left: 10px;
+            .price-s {
+              font-weight: 600;
+              color: red;
+              margin-bottom: 7px;
+            }
+            .des {
+              margin-bottom: 7px;
+            }
+            .time {
+              span {
+                font-size: 13px;
+                &:last-child {
+                  color: red;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+        }
+        .button-back-next {
+          margin-bottom: 20px !important;
+          .button-box {
+            a {
+              width: 35%;
+              &:last-child {
+                width: 65%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive("medium") {
+  .overlay {
+    position: fixed;
+    top: 0px;
+    right: -500px;
+    background: #000 !important;
+    .popup {
+      width: 90% !important;
+    }
+  }
+}

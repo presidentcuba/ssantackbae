@@ -1,0 +1,97 @@
+.form-input-privacy {
+  margin-top: 30px;
+  .box-width {
+    .width-default {
+      .form-box {
+        .box-one {
+          .item {
+            margin-bottom: 15px;
+            .form-input {
+              label {
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                span {
+                  font-weight: 400;
+                  color: #9a9b9e;
+                }
+              }
+              input {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+              select {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                color: #9a9b9e;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+            }
+            .form-btn {
+              display: flex;
+              align-items: flex-end;
+              button {
+                width: 100%;
+                border: 1px solid #9a9b9e;
+                background-color: #9a9b9e;
+                padding: 10px 10px;
+                display: inline-block;
+                border-radius: 3px;
+                color: #fff;
+              }
+            }
+            .form-checkbox {
+              span {
+                font-size: 16;
+                color: #000;
+              }
+            }
+            .form-password {
+              position: relative;
+              label {
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                span {
+                  font-weight: 400;
+                  color: #9a9b9e;
+                }
+              }
+              input {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+              i {
+                position: absolute;
+                bottom: 15px;
+                right: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

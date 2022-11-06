@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- IMPORT BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="stylesheet" href="../scss/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../scss/owl.theme.default.min.css" />
+
+    <title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+  </head>
+  <body>
+    <div class="mask-dark" id="maskM"></div>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" alt="">
+              <img src="../images/logo.png" alt="" class="logo-mobile" />
+              <span>싼택배</span>
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="nav-menu" id="listMenu">
+              <li class="nav-btn">
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+              <li class="nav-item logo-menu d-none">
+                <a class="nav-link" href="../index.html" alt=""> 싼택배</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/order_list.html" alt="">
+                  <img src="../images/menu-01.png" />
+                  주문목록
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/pay_method.html" alt="">
+                  <img src="../images/menu-02.png" /> 결제수단</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/mycoupon.html" alt="">
+                  <img src="../images/menu-03.png" /> 할인쿠폰</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cancel.html" alt="">
+                  <img src="../images/menu-04.png" />취소, 교환, 반품목록
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/qna.html" alt="">
+                  <img src="../images/menu-04.png" /> 문의내역
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/faq.html" alt="">
+                  <img src="../images/menu-05.png" /> 자주하는질문</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage/cs.html" alt="">
+                  <img src="../images/menu-06.png" /> 고객센터</a
+                >
+              </li>
+
+              <li class="icon-close" onclick="showMenu(2)">
+                <i class="fal fa-times"></i>
+              </li>
+            </ul>
+            <div class="icon-menu" onclick="showMenu(1)">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slogan slogan-5usd common-5usd">
+      <div class="width-default">
+        <div class="slogan-content">
+          <div class="image">
+            <!-- <div class="slide-desktop">
+              <img class="desktop" src="images/hero_pc_5usd.gif" alt="" />
+            </div> -->
+            <div class="slide-mobile">
+              <div class="slide">
+                <img
+                  class="mobile"
+                  src="images/hero_mobile_5usd.gif"
+                  alt="한국택배 싼택배"
+                />
+              </div>
+            </div>
+            <div class="slide-pc">
+              <div class="slide">
+                <img
+                  class="mobile"
+                  src="images/hero_pc_5usd.gif"
+                  alt="한국택배 싼택배"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="question common-5usd">
+      <div class="width-default">
+        <div class="question-content">
+          <span class="subtitle">아직 모르세요?!</span>
+          <span class="title_b">진짜 싼ㅡ택배</span>
+          <span class="title_m">말하면 입 아파요</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro_5usd common-5usd">
+      <div class="width-default">
+        <div class="title-page">
+          <div class="title">지점택배</div>
+          <div class="des">
+            <p>기본 파운드 <strong>$5부터~</strong></p>
+            <p><strong>지점으로 방문</strong>하세요.</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-left">
+            <a href="#" alt="" class="d-none"> 지점택배 </a>
+            <span class="description"
+              ><strong>가까운 지점에 방문</strong>해서 <br />
+              택배보내는 방법이예요.</span
+            >
+          </div>
+        </div>
+        <div class="description-text">
+          <div class="text-des">
+            중량 추가 <u>1파운드당 $2</u> 이 추가됩니다.
+          </div>
+          <div class="text-des">
+            포장된 박스의 중량과 부피를 입력하고 택배요금을 알아보세요.
+          </div>
+        </div>
+
+        <div class="button-page" onclick="showModalPage('introSlide', false)">
+          <span>지금 알아보기</span>
+        </div>
+
+        <div class="tab-intro">
+          <div class="tab-name">
+            <a href="/5usd/guide_5usd_fee.html" class="tab">요금안내</a>
+            <a href="/5usd/guide_5usd_branch.html" class="tab">지점안내</a>
+            <a href="/guide_how.html" class="tab">이용안내</a>
+            <a href="/guide_packing.html" class="tab">포장안내</a>
+            <a href="/guide_customs.html" class="tab">통관안내</a>
+            <a href="/guide_notice.html" class="tab">유의사항</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-info common-5usd">
+      <div class="width-default">
+        <div class="box-content">
+          <h5 class="title_b">갓생 택배 <span> 참 잘했어요~</span></h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="item">
+                <div class="image">
+                  <img src="../images/box-empty.png" />
+                </div>
+                <div class="thread">
+                  <div class="des">
+                    <p>
+                      한국에 잘 보냈어요. <br />
+                      포인트로 배송비 할인받아
+                    </p>
+                    <p class="">***th &ensp; 2022-09-30</p>
+                    <p class="rating">★★★★★</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item">
+                <div class="image">
+                  <img src="../images/box-empty.png" />
+                </div>
+                <div class="thread">
+                  <div class="des">
+                    <p>
+                      한국에 잘 보냈어요. <br />
+                      포인트로 배송비 할인받아
+                    </p>
+                    <p class="">***th &ensp; 2022-09-30</p>
+                  </div>
+                  <div class="rating">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-list common-5usd">
+      <div class="width-default">
+        <div class="list-content">
+          <h5 class="title_b">
+            싼택배 <span> 이벤트<i>!</i></span>
+          </h5>
+          <div class="subtitle_m">
+            이벤트에서 다양한 혜택을 만나보세요<i>!</i>
+          </div>
+          <div class="list-box">
+            <div class="image">
+              <!-- <img src="../images/box-empty.png" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-text common-5usd">
+      <div class="width-default">
+        <div class="content-text-box">
+          <div class="title_b">
+            지금 가지고 오세요. <br />
+            기본 $5부터<i>!</i>
+          </div>
+          <a onclick="showModalPage('introSlide', false)" class="detail"
+            ><b>지금 알아보기</b></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="width-default">
+        <div class="footer-content">
+          <div class="list-icon">
+            <div class="icon">
+              <a href="#" class="link-to"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="icon">
+              <a href="#" class="link-to"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="icon">
+              <a href="#" class="link-to"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <ul class="list-option">
+            <li><a href="#" class="link">고객문의</a></li>
+            <li><a href="#" class="link">운송약관</a></li>
+            <li><a href="#" class="link">계약상세조건</a></li>
+          </ul>
+          <div class="copy-right">Copyright 싼택배. All right reserved</div>
+          <div class="name-mobile">
+            <img src="../images/logo-s.png" alt="싼택배 로고" />
+            <span>싼택배 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-link-page">
+      <div class="link-to-estimate">
+        <a href="intro_5usd.html" target="_blank">견적</a>
+      </div>
+    </div>
+
+    <div class="back-to-top d-none" id="backToTop">
+      <i class="far fa-angle-up"></i>
+    </div>
+    <!-------Dock Bar start----------->
+    <div class="menu-bot">
+      <div class="menu-box">
+        <div class="menu-list">
+          <div class="icon home">
+            <div class="active">
+              <a href="/"> <img src="../images/home.png" /></a>
+            </div>
+          </div>
+          <div class="icon notice">
+            <div>
+              <a href="/mypage/alert.html">
+                <img src="../images/noti.png" />
+                <span class="total-notice">
+                  <span>1</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="icon profile">
+            <div>
+              <a href="/mypage/mypage.html">
+                <img src="../images/user.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------Dock Bar end----------->
+
+    <div id="popupLogin" class="overlay popup-login">
+      <div class="popup">
+        <div class="close" onclick="openModal('popupLogin', false)">
+          <i class="far fa-times"></i>
+        </div>
+        <div class="content content-login">
+          <div class="title">어서오세요!</div>
+          <div class="description">서비스 이용을 위해 로그인이 필요해요.</div>
+          <div class="form-content">
+            <div class="form-item">
+              <label>이메일 ID</label>
+              <input type="text" name="" placeholder="email" />
+            </div>
+
+            <div class="form-item">
+              <label>비밀번호</label>
+              <input type="password" name="" placeholder="비밀번호" />
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" name="" />
+              <label for="">아이디 저장</label>
+            </div>
+            <button
+              type="submit"
+              onclick="goNextPage('estimate_5usd_result.html')"
+            >
+              로그인
+            </button>
+          </div>
+          <div class="text">
+            <span onclick="openModal('popupPassword', true)"
+              >비밀번호 찾기</span
+            >
+            <span onclick="openModal('popupRegister', true)"
+              >이메일로 가입하기</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupRegister" class="overlay popup-register">
+      <div class="popup">
+        <div class="close" onclick="openModal('popupRegister', false)">
+          <i class="far fa-times"></i>
+        </div>
+        <div class="content content-login">
+          <div class="title">어서오세요!</div>
+          <div class="description">서비스 이용을 위해 로그인이 필요해요.</div>
+          <div class="form-content">
+            <div class="form-item">
+              <label>이메일 ID <span>(이메일 ID)</span></label>
+              <input type="text" name="" placeholder="email" />
+            </div>
+
+            <div class="form-item">
+              <label>비밀번호</label>
+              <input type="password" name="" placeholder="비밀번호" />
+            </div>
+
+            <div class="form-item">
+              <label>비밀번호 재입력</label>
+              <input type="password" name="" placeholder="비밀번호" />
+            </div>
+            <div class="form-item">
+              <label>First Name</label>
+              <input type="text" name="" placeholder="영문이름" />
+            </div>
+
+            <div class="form-item">
+              <label>Last Name</label>
+              <input type="text" name="" placeholder="영문성" />
+            </div>
+            <div class="form-item">
+              <label>전화번호</label>
+              <input type="text" name="" placeholder="전화번호" />
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" name="" />
+              <label for=""
+                >ALG ZUYARO,INC의 개인정보처리방침 및 제3자 정보제공에 동의 후
+                신청됩니다.
+              </label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="" />
+              <label for=""
+                >ALG ZUYARO,INC의 계약 상세조건 및 운송약관에 동의합니다.
+              </label>
+            </div>
+            <div class="button-back-next">
+              <button class="back" onclick="goBack()">
+                <i class="far fa-chevron-left"></i>
+              </button>
+              <button class="next" onclick="openModal('popupComplete', true)">
+                회원가입하기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupComplete" class="overlay popup-complete">
+      <div class="popup">
+        <div class="close" onclick="openModal('popupComplete', false)">
+          <i class="far fa-times"></i>
+        </div>
+        <div class="content popup-complete">
+          <div class="text-alert">환영합니다!</div>
+          <div class="title">회원가입 성공!</div>
+          <div class="description"></div>
+          <div class="form-content">
+            <button type="submit" class="complete">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupPassword" class="overlay popup-pass">
+      <div class="popup">
+        <div class="close" onclick="openModal('popupPassword', false)">
+          <i class="far fa-times"></i>
+        </div>
+        <div class="content popup-pasword">
+          <div class="title">비밀번호 찾기</div>
+          <div class="description">회원가입시 사용한 이메일을 쓰세요.</div>
+          <div class="form-content">
+            <div class="form-item">
+              <label>이메일 ID</label>
+              <input type="text" name="" placeholder="email" />
+            </div>
+
+            <p class="text-red">
+              가입 이메일로 <span>임시비밀번호를</span> 보내드립니다.
+            </p>
+            <button type="submit">보내기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide -->
+    <div class="pick-slide" id="introSlide">
+      <div class="pick-box">
+        <div class="width-default">
+          <div class="name">
+            <!-- <div class="text">
+              <img src="../images/icon-close.png" />
+              <span> 오늘하루 보지 않기</span>
+            </div> -->
+            <div class="icon-close">
+              <a onclick="showModalPage('introSlide', true)"
+                ><i class="far fa-times"></i
+              ></a>
+            </div>
+          </div>
+          <div class="list-item owl-carousel owl-theme">
+            <div class="item">
+              <div class="thread">
+                <span>1 견적</span>
+                <span
+                  >주소와 포장된 박스의 무게와 부피를 입력하고 견적을
+                  확인합니다.</span
+                >
+              </div>
+              <div class="image">
+                <img src="images/guidepop_5usd_img01.png" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="thread">
+                <span>2 신청</span>
+                <span
+                  >배송비를 결제하여 신청합니다. 포장된 박스 내외부 사진을
+                  찍어놓습니다.</span
+                >
+              </div>
+              <div class="image">
+                <img src="images/guidepop_5usd_img02.png" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thread">
+                <span>3 발송정보/통관정보 입력</span>
+                <span>마이페이지에서 발송정보와 통관정보를 입력합니다.</span>
+              </div>
+              <div class="image">
+                <img src="images/guidepop_5usd_img03.png" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="thread">
+                <span>4 지점방문</span>
+                <span
+                  >포장된 택배박스에 주문번호를 쓰고, 가까운 지점에
+                  접수합니다.</span
+                >
+              </div>
+              <div class="image">
+                <img src="images/guidepop_5usd_img04.png" />
+              </div>
+              <div class="link">
+                <a href="estimate_5usd.html">견적 알아보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/crollToTop.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

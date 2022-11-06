@@ -1,0 +1,37 @@
+.form-checkbox .box-width .width-default .form-box {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  margin-top: 20px; }
+  .form-checkbox .box-width .width-default .form-box .title {
+    font-size: 16px;
+    font-weight: 550;
+    margin-bottom: 10px; }
+  .form-checkbox .box-width .width-default .form-box .des {
+    font-size: 16px;
+    color: #9a9b9e;
+    margin-bottom: 5px; }
+  .form-checkbox .box-width .width-default .form-box .form-button input {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #cccccc; }
+    .form-checkbox .box-width .width-default .form-box .form-button input:focus-visible {
+      outline: none; }
+  .form-checkbox .box-width .width-default .form-box .form-button button {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border: 1px solid #223591;
+    color: #223591; }
+    .form-checkbox .box-width .width-default .form-box .form-button button:focus-visible {
+      outline: none; }
+  .form-checkbox .box-width .width-default .form-box .checkbox {
+    margin-top: 20px; }
+    .form-checkbox .box-width .width-default .form-box .checkbox .form-check {
+      display: flex;
+      padding: 0; }
+      .form-checkbox .box-width .width-default .form-box .checkbox .form-check .checkbox-item {
+        flex: 1; }
+
+/*# sourceMappingURL=infoCustoms.css.map */

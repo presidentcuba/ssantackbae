@@ -1,0 +1,132 @@
+.form-input-add-bank {
+  margin-top: 15px;
+  .box-width {
+    .width-default {
+      .form-box {
+        border: 1px solid #cccccc;
+        padding: 20px;
+        border-radius: 10px;
+        .box-one {
+          .item {
+            margin-bottom: 15px;
+            .form-input {
+              label {
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                span {
+                  font-weight: 400;
+                  color: #9a9b9e;
+                }
+              }
+              input {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+              select {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                color: #9a9b9e;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+            }
+            .form-btn {
+              display: flex;
+              align-items: flex-end;
+              button {
+                width: 100%;
+                border: 1px solid #9a9b9e;
+                background-color: #9a9b9e;
+                padding: 10px 10px;
+                display: inline-block;
+                border-radius: 3px;
+                color: #fff;
+              }
+            }
+            .form-group-radio {
+              label {
+                display: block;
+              }
+              .form-radio {
+                display: flex;
+                .radio {
+                  display: flex;
+                  flex: 1;
+                  label {
+                    margin-bottom: 0;
+                    margin-left: 10px;
+                    color: #888888;
+                  }
+                }
+              }
+            }
+
+            .form-checkbox {
+              span {
+                font-size: 16;
+                color: #000;
+              }
+            }
+            .form-password {
+              position: relative;
+              label {
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                span {
+                  font-weight: 400;
+                  color: #9a9b9e;
+                }
+              }
+              input {
+                padding: 10px 10px;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                width: 100%;
+                border-radius: 3px;
+                &:focus-visible {
+                  border: 1px solid #223591;
+                  outline: #223591;
+                }
+              }
+              i {
+                position: absolute;
+                bottom: 15px;
+                right: 25px;
+              }
+            }
+            .form-number {
+              .form-input {
+                display: flex;
+                align-items: center;
+                input {
+                  width: 40%;
+                }
+                a {
+                  width: 60%;
+                  text-decoration: underline;
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

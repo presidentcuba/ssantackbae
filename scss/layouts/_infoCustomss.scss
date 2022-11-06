@@ -1,0 +1,53 @@
+.form-checkbox {
+  .box-width {
+    .width-default {
+      .form-box {
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #cccccc;
+        margin-top: 20px;
+        .title {
+          font-size: 16px;
+          font-weight: 550;
+          margin-bottom: 10px;
+        }
+        .des {
+          font-size: 16px;
+          color: #9a9b9e;
+          margin-bottom: 5px;
+        }
+        .form-button {
+          input {
+            padding: 10px 15px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+            &:focus-visible {
+              outline: none;
+            }
+          }
+          button {
+            padding: 10px 15px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+            background-color: #ffffff;
+            border: 1px solid #223591;
+            color: #223591;
+            &:focus-visible {
+              outline: none;
+            }
+          }
+        }
+        .checkbox {
+          margin-top: 20px;
+          .form-check {
+            display: flex;
+            padding: 0;
+            .checkbox-item {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
