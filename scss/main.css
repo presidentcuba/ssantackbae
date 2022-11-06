@@ -1273,15 +1273,16 @@ a:link {
         font-size: 16px; }
       .estimate_5usd .form-content .box-width .weight .checkbox {
         display: flex;
-        justify-content: space-between;
         margin-top: 40px;
         margin-bottom: 30px; }
         .estimate_5usd .form-content .box-width .weight .checkbox .name {
           font-size: 16px;
-          font-weight: 600; }
+          font-weight: 600;
+          margin-right: 10%; }
         .estimate_5usd .form-content .box-width .weight .checkbox .form-item {
           display: flex;
-          align-items: center; }
+          align-items: center;
+          margin-right: 10%; }
           .estimate_5usd .form-content .box-width .weight .checkbox .form-item label {
             color: #707070;
             font-size: 16px;
@@ -1576,6 +1577,14 @@ a:link {
             background-color: #17c2ff; }
           .estimate-result .form-register .register-container .content .slide-card .slide .item-two {
             background-color: #ffb300; }
+          .estimate-result .form-register .register-container .content .slide-card .slide .item-link {
+            border: 1px dashed #5e8eff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #5e8eff;
+            font-size: 16px; }
         .estimate-result .form-register .register-container .content .slide-card .des {
           text-align: center; }
       .estimate-result .form-register .register-container .content .register-tax {
@@ -1710,6 +1719,15 @@ a:link {
   .button-back-next .button-box {
     display: flex;
     justify-content: center !important; }
+    .button-back-next .button-box .bth-guide {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #223591;
+      background-color: #fff;
+      padding: 7px 25px;
+      color: #223591;
+      font-size: 16px;
+      margin-left: 0; }
     .button-back-next .button-box a {
       width: 45%;
       margin: 0px 5px !important; }
@@ -3879,8 +3897,9 @@ a:link {
     .overlay .popup .close {
       position: absolute;
       top: -30px;
-      right: -5px;
+      right: 0px;
       transition: all 200ms;
+      color: #fff;
       z-index: 10000; }
       .overlay .popup .close i {
         font-size: 30px;
@@ -4656,6 +4675,8 @@ a:link {
 .guide_5usd_fee {
   margin-top: 15px;
   margin-bottom: 20px; }
+  .guide_5usd_fee .box-width .width-default .fee-box .des {
+    font-size: 16px; }
   .guide_5usd_fee .box-width .width-default .fee-box table {
     border: 1px solid #cccccc !important; }
     .guide_5usd_fee .box-width .width-default .fee-box table thead tr th {
@@ -5213,7 +5234,7 @@ a:link {
     margin: 0 auto; }
     .pick-slide .pick-box .width-default .name {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 5px; }
       .pick-slide .pick-box .width-default .name .text {

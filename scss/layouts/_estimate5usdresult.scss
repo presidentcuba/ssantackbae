@@ -303,6 +303,15 @@
             .item-two {
               background-color: #ffb300;
             }
+            .item-link {
+              border: 1px dashed #5e8eff;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              color: #5e8eff;
+              font-size: 16px;
+            }
           }
           .des {
             text-align: center;
@@ -504,6 +513,16 @@
   .button-box {
     display: flex;
     justify-content: center !important;
+    .bth-guide {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #223591;
+      background-color: #fff;
+      padding: 7px 25px;
+      color: #223591;
+      font-size: 16px;
+      margin-left: 0;
+    }
     a {
       width: 45%;
       margin: 0px 5px !important;

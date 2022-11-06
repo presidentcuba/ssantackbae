@@ -291,7 +291,7 @@
 
     <div class="button-link-page">
       <div class="link-to-estimate">
-        <a href="intro_5usd.html" target="_blank">견적</a>
+        <a onclick="showModalPage('introSlide', false)">견적</a>
       </div>
     </div>
 
@@ -478,10 +478,10 @@
       <div class="pick-box">
         <div class="width-default">
           <div class="name">
-            <!-- <div class="text">
+            <div class="text">
               <img src="../images/icon-close.png" />
               <span> 오늘하루 보지 않기</span>
-            </div> -->
+            </div>
             <div class="icon-close">
               <a onclick="showModalPage('introSlide', true)"
                 ><i class="far fa-times"></i
@@ -567,7 +567,7 @@
         loop: true,
         margin: 10,
         nav: true,
-        dots: false,
+        dots: true,
         responsive: {
           0: {
             items: 1,

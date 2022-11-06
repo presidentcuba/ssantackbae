@@ -314,9 +314,12 @@
                     <div class="name">CHASE</div>
                     <div class="key">CHASE ****-****-0000-****</div>
                   </div>
-                  <div class="item item-three">
-                    <div class="name">CHASE</div>
-                    <div class="key">CHASE ****-****-0000-****</div>
+                  <div
+                    class="item item-link"
+                    onclick="goNextPage('/mypage/pay_method.html')"
+                  >
+                    <div class="add">+</div>
+                    <div class="des">결제수단 등록</div>
                   </div>
                 </div>
                 <div class="des">현재 선택된 결제 수단</div>
@@ -526,7 +529,9 @@
                 <a href="#" class="link-to">방문택배 플러스 ></a>
               </div>
             </div>
-            <button type="submit">그냥 할래요</button>
+            <button onclick="goNextPage('/mypage/order_complete.html')">
+              그냥 할래요
+            </button>
           </div>
         </div>
       </div>
@@ -608,8 +613,22 @@
             <div class="button-back-next">
               <div class="box-width">
                 <div class="button-box">
-                  <a><button class="back">취소</button></a>
-                  <a><button class="next">적용하기</button></a>
+                  <a
+                    ><button
+                      class="back"
+                      onclick="openModal('popupPrice', false)"
+                    >
+                      취소
+                    </button></a
+                  >
+                  <a
+                    ><button
+                      class="next"
+                      onclick="openModal('popupPrice', false)"
+                    >
+                      적용하기
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
